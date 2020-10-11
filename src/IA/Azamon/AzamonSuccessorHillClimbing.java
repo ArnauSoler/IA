@@ -9,9 +9,9 @@ import aima.search.framework.SuccessorFunction;
 
 public class AzamonSuccessorHillClimbing implements SuccessorFunction {  
 	
-	public List getSuccessors(Object aState) {
+	public List<Successor> getSuccessors(Object aState) {
 		ArrayList<Successor> retVal = new ArrayList<>();
-		AzamonEstado estat = (AzamonEstado) aState;
+		AzamonState estat = (AzamonState) aState;
 
 		// something
 

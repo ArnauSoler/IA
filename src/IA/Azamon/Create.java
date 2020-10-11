@@ -1,5 +1,6 @@
 package IA.Azamon;
 
+import java.util.*;
 import aima.search.framework.HeuristicFunction;
 import aima.search.framework.Problem;
 import aima.search.framework.Search;
@@ -16,7 +17,7 @@ public class Create {
 		System.out.println("3.-Exit");
 		switch(scan.nextInt()){
 		    case 1:
-			HillClimbingAlgorithm();
+		    HillClimbingAlgorithm();
 			break;
 		    case 2:
 			SimulatedAnnealingAlgorithm();
@@ -25,7 +26,8 @@ public class Create {
 			scan.close();
 			return;
 		    default:
-			initial(args);
+		    main(args);
+		}
 	}
 	
 	private static int SelectGenerator(){
