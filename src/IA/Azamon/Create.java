@@ -87,7 +87,7 @@ public class Create {
 			
 			HillClimbingSearch hillClimbingSearch = new HillClimbingSearch();
 			
-			execute(problem, hillClimbingSearch);
+			// execute(problem, hillClimbingSearch);
 		
 		} catch(Exception e){
 		    	System.out.println(e.getMessage());
@@ -108,7 +108,7 @@ public class Create {
 			
 			SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch();
 			
-			execute(problem, simulatedAnnealingSearch);
+			// execute(problem, simulatedAnnealingSearch);
 		
 		} catch(Exception e){
 		    	System.out.println(e.getMessage());
