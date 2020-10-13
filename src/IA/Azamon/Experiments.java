@@ -8,7 +8,9 @@ import aima.search.informed.SimulatedAnnealingSearch;
 
 public class Experiments {
 	public static void main(String[] args) {
-		System.out.println("Select the experiment");
+		System.out.println("###########################################");
+		System.out.println("###	   Select an Experiment	        ###");
+		System.out.println("###########################################");
 		
 	}
 }

@@ -11,10 +11,13 @@ import aima.search.informed.SimulatedAnnealingSearch;
 public class Create {
 	private static Scanner scan = new Scanner(System.in);
 	public static void main(String[] args) {
-		System.out.println("Select the algorithm");
-		System.out.println("1.-Hill Climbing");
-		System.out.println("2.-Simulated Annealing");
-		System.out.println("3.-Exit");
+		System.out.println("###########################################");
+		System.out.println("###	    Select an Algorithm		###");
+		System.out.println("###########################################");
+		System.out.println("### 1.	Hill Climbing			###");
+		System.out.println("### 2.	Simulated Annealing		###");
+		System.out.println("### 3.	Exit				###");
+		System.out.println("###########################################");
 		switch(scan.nextInt()){
 		    case 1:
 		    HillClimbingAlgorithm();
@@ -31,22 +34,26 @@ public class Create {
 	}
 	
 	private static int SelectGenerator(){
-		System.out.println("Select the generator");
-		System.out.println("1.- Generator A");
-		System.out.println("2.- Generator B");
-		System.out.println("3.- Generator C");
+		System.out.println("###########################################");
+		System.out.println("###	    Select the Generator	###");
+		System.out.println("###########################################");
+		System.out.println("### 1.	Generator A			###");
+		System.out.println("### 2.	Generator B			###");
+		System.out.println("### 3.	Generator C			###");
+		System.out.println("###########################################");
 		int response = scan.nextInt();
 		return response;
 	    }
 	
 	private static AzamonState CreateState(){
-		System.out.println("Enter the number of packages:");
+
+		System.out.println("### 1.	Enter the number of packages:");
 		int numPaq = scan.nextInt();
-		System.out.println("Enter a seed to generate the packages:");
+		System.out.println("### 2.	Enter a package generator seed:");
 		int seedPaquetes = scan.nextInt();
-		System.out.println("Enter a proportion for transports:");
+		System.out.println("### 3.	Enter a proportion for transports:");
 		double proportion = scan.nextDouble();
-		System.out.println("Enter a seed to generate the transports:");
+		System.out.println("### 4.	Enter a transport generator seed:");
 		int seedOfertas = scan.nextInt();
 		AzamonState azamonState = new AzamonState();
 		int Generator = SelectGenerator();
@@ -66,15 +73,19 @@ public class Create {
 	   }
 
 	private static int selectHeuristic(){
-		System.out.println("Heuristic Selection");
-		System.out.println("1.- Minimize transportation and storage cost.");
-		System.out.println("2.- Maximize the happiness of customers.");
+		System.out.println("###########################################");
+		System.out.println("###	    Select the Heuristic	###");
+		System.out.println("###########################################");
+		System.out.println("### 1.	Min. transport/storage cost	###");
+		System.out.println("### 2.	Max. the customer happiness	###");
+		System.out.println("###########################################");
 		int response = scan.nextInt();
 		return response;
 	}
 
 	private static void HillClimbingAlgorithm(){
-		System.out.println("Azamon - Hill Climbing Algorithm Selected");
+		System.out.println("###########################################");
+
 		AzamonState azamonState = CreateState();
 		try{
 			int heuristic = selectHeuristic();
@@ -95,7 +106,7 @@ public class Create {
 	}
 
 	private static void SimulatedAnnealingAlgorithm(){
-		System.out.println("Azamon - Simulated Annealing Algorithm Selected");
+		System.out.println("###########################################");
 		AzamonState azamonState = CreateState();
 		try{
 			int heuristic = selectHeuristic();
