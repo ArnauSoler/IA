@@ -7,6 +7,8 @@ import aima.search.framework.Search;
 import aima.search.framework.SearchAgent;
 import aima.search.informed.HillClimbingSearch;
 import aima.search.informed.SimulatedAnnealingSearch;
+import IA.Azamon.AzamonState;
+
 
 public class Create {
 	private static Scanner scan = new Scanner(System.in);
@@ -55,18 +57,18 @@ public class Create {
 		double proportion = scan.nextDouble();
 		System.out.println("### 4.	Enter a transport generator seed: (integer)");
 		int seedOfertas = scan.nextInt();
-		AzamonState azamonState = new AzamonState();
+		AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion, seedOfertas);
 		int Generator = SelectGenerator();
 		
 		switch (Generator) {
 		    case 1:
-			azamonState.generatorA(numPaq, seedPaquetes, proportion, seedOfertas);
+		    	azamonState.generateInitialStateA();
 			break;
 		    case 2:
-			azamonState.generatorB(numPaq, seedPaquetes, proportion, seedOfertas);
+		    	azamonState.generateInitialStateB();
 			break;
 		    case 3:
-			azamonState.generatorC(numPaq, seedPaquetes, proportion, seedOfertas);
+		    	azamonState.generateInitialStateC();
 			break;
 		}
 		return azamonState;
