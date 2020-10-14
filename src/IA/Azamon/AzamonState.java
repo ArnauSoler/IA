@@ -35,8 +35,8 @@ public class AzamonState {
 			double offerPrice = offers.get(packageAssignments.get(i)).getPrecio();
 			int offerDays = offers.get(packageAssignments.get(i)).getDias();
 			// Add storage cost
-			if (offerDays > 3) { price += 2*0.2*weight; }
-			else if (offerDays > 1) { price += 0.25*weight; }
+			if (offerDays > 3) price += 2*0.2*weight;
+			else if (offerDays > 1) price += 0.25*weight;
 			// Add transport cost
 			price += weight*offerPrice;
 		}
@@ -69,18 +69,18 @@ public class AzamonState {
 	
 	// INITIAL STATE GENERATORS
 	public void generateInitialStateA() {
-		// Sort packages by priority (highest to lowest)
+		// Sort packages by priority (lowest to highest)
 		Collections.sort(packages, new Comparator<Paquete>() {
             @Override
             public int compare(Paquete p1, Paquete p2) {
-                return ((Double) p2.getPeso()).compareTo((Double) p1.getPeso());
+                return ((Integer) p2.getPrioridad()).compareTo((Integer) p1.getPrioridad());
             }
         });
         // Sort offers by price (lowest to highest)
         Collections.sort(offers, new Comparator<Oferta>() {
             @Override
-            public int compare(Oferta p1, Oferta p2) {
-                return ((Double) p2.getPrecio()).compareTo((Double) p1.getPrecio());
+            public int compare(Oferta o1, Oferta o2) {
+                return ((Double) o2.getPrecio()).compareTo((Double) o1.getPrecio());
             }
         });
         // Assign packages to offers
@@ -98,7 +98,20 @@ public class AzamonState {
 	}
 
 	public void generateInitialStateB() {
-		// TODO Auto-generated method stub
+		// Sort packages by priority (lowest to highest)
+		Collections.sort(packages, new Comparator<Paquete>() {
+            @Override
+            public int compare(Paquete p1, Paquete p2) {
+                return ((Integer) p2.getPrioridad()).compareTo((Integer) p1.getPrioridad());
+            }
+        });
+		// Sort offers by date (lowest to highest)
+        Collections.sort(offers, new Comparator<Oferta>() {
+            @Override
+            public int compare(Oferta o1, Oferta o2) {
+                return ((Integer) o2.getDias()).compareTo((Integer) o1.getDias());
+            }
+        });
 		
 	}
 
