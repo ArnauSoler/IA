@@ -49,11 +49,11 @@ public class Create {
 
 		System.out.println("### 1.	Enter the number of packages:");
 		int numPaq = scan.nextInt();
-		System.out.println("### 2.	Enter a package generator seed:");
+		System.out.println("### 2.	Enter a package generator seed: (integer)");
 		int seedPaquetes = scan.nextInt();
-		System.out.println("### 3.	Enter a proportion for transports:");
+		System.out.println("### 3.	Enter a proportion for transports: (double)");
 		double proportion = scan.nextDouble();
-		System.out.println("### 4.	Enter a transport generator seed:");
+		System.out.println("### 4.	Enter a transport generator seed: (integer)");
 		int seedOfertas = scan.nextInt();
 		AzamonState azamonState = new AzamonState();
 		int Generator = SelectGenerator();
