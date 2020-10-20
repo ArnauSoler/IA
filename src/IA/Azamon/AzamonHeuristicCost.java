@@ -4,8 +4,8 @@ import aima.search.framework.HeuristicFunction;
 
 public class AzamonHeuristicCost implements HeuristicFunction {	
 	
-	public double getHeuristicValue(Object state) {
-		AzamonState estat = (AzamonState) state;
-			return 0.0;// something
+	public double getHeuristicValue(Object aState) {
+		AzamonState state = (AzamonState) aState;
+		return state.getPrice();
 	}
 }
