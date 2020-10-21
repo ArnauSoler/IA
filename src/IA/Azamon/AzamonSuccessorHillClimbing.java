@@ -24,7 +24,7 @@ public class AzamonSuccessorHillClimbing implements SuccessorFunction {
 				}
 			}
 			// fem i+1 perque no te sentit fer swap amb ell mateix
-			for(int j = i+1; j <= parent_state.packages.size(); ++j){
+			for(int j = i+1; j < parent_state.packages.size(); ++j){
 				AzamonState child_state = new AzamonState(parent_state);
 				if(child_state.swapPackage(i, j)){
 					successors.add(new Successor (null, child_state));
