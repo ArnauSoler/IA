@@ -133,7 +133,7 @@ public class Create {
 			Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(), new AzamonGoalTest(), f_heuristic);
 			System.out.println("Problem Created");
 			
-			Search simulatedAnnealingSearch = new SimulatedAnnealingSearch();
+			Search simulatedAnnealingSearch = new SimulatedAnnealingSearch(100, 20, 5, 0.01);
 			System.out.println("Search Created");
 			
 			SearchAgent agent = new SearchAgent(problem, simulatedAnnealingSearch);
