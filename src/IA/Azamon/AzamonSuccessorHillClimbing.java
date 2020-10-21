@@ -18,8 +18,10 @@ public class AzamonSuccessorHillClimbing implements SuccessorFunction {
 			for (int j = 0; j < parent_state.offers.size(); ++j) {
 				AzamonState child_state = new AzamonState(parent_state);
 				if(child_state.movePackage(i, j)){
+					StringBuffer S = new StringBuffer();
+					S.append("moving package " + i + " to offer " + j + "\n");
 					// No acabo de tenir clar que s'ha de passar com a primer arg.
-					successors.add(new Successor (null, child_state));
+					successors.add(new Successor (S.toString(), child_state));
 					
 				}
 			}
@@ -27,7 +29,9 @@ public class AzamonSuccessorHillClimbing implements SuccessorFunction {
 			for(int j = i+1; j < parent_state.packages.size(); ++j){
 				AzamonState child_state = new AzamonState(parent_state);
 				if(child_state.swapPackage(i, j)){
-					successors.add(new Successor (null, child_state));
+					StringBuffer S = new StringBuffer();
+					S.append("swapping package " + i + " with package " + j + "\n");
+					successors.add(new Successor (S.toString(), child_state));
 					
 				}
 			}
