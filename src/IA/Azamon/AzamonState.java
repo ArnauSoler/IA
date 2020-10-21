@@ -24,15 +24,15 @@ public class AzamonState {
 		packages = new Paquetes(numPaq, seedPaquetes);
 		offers = new Transporte(packages, proportion, seedOfertas);
 		
-		/// He afegit aixo, nose si ta be
-		happiness = computeHappiness();
-		price = computePrice();
-		
 		packageAssignments = new Vector<Integer>(numPaq);
-		for (int i = 0; i < numPaq; i++) { packageAssignments.set(i, -1); }
+		for (int i = 0; i < numPaq; i++) { packageAssignments.add(-1); }
 		
 		offersLoad = new Vector<Double>(offers.size());
-		for (int i = 0; i < offers.size(); i++) { offersLoad.set(i, 0.0); }		
+		for (int i = 0; i < offers.size(); i++) { offersLoad.add(0.0); }		
+		
+		/// He afegit aixo, nose si ta be
+		// happiness = computeHappiness();
+		// price = computePrice();
 	}
 	
 	public AzamonState(AzamonState state){

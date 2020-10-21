@@ -121,6 +121,14 @@ public class Create {
 			
 			SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch();
 			
+			SearchAgent agent = new SearchAgent(problem, simulatedAnnealingSearch);
+			
+			List actions = agent.getActions();
+			for(int i = 0; i < actions.size(); ++i){
+				String action = (String) actions.get(i);
+            	System.out.println(action);
+			}
+			
 			// execute(problem, simulatedAnnealingSearch);
 		
 		} catch(Exception e){
