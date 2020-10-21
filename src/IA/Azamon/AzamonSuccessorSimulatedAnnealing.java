@@ -25,11 +25,11 @@ public class AzamonSuccessorSimulatedAnnealing implements SuccessorFunction {
 					successors.add(new Successor(S.toString(), newState));
 				}
 			}
-			for(int j = 0; j < AzamonState.packages.size(); ++j) {
+			for(int j = i + 1; j < AzamonState.packages.size(); ++j) {
 				// ens movem per tots els packages
 				// aqui hem de mirar si es pot cambiar el paguet i amb el paquet j
 				AzamonState newState = new AzamonState((AzamonState) aState);
-				if(i != j && newState.swapPackage(i, j)){
+				if(newState.swapPackage(i, j)){
 					StringBuffer S = new StringBuffer();
 					S.append("swapping package " + i + " with package " + j + "\n");
 
