@@ -49,6 +49,14 @@ public class AzamonState {
 		return offers;
 	}
 	
+	public Vector<Integer> getPackageAssignments() {
+		return packageAssignments;
+	}
+	
+	public Vector<Double> getOffersLoad() {
+		return offersLoad;
+	}
+	
 	public int getHappiness() {
 		return happiness;
 	}
@@ -98,14 +106,14 @@ public class AzamonState {
 		Collections.sort(packages, new Comparator<Paquete>() {
             @Override
             public int compare(Paquete p1, Paquete p2) {
-                return ((Integer) p2.getPrioridad()).compareTo((Integer) p1.getPrioridad());
+                return ((Integer) p1.getPrioridad()).compareTo((Integer) p2.getPrioridad());
             }
         });
         // Sort offers by price (lowest to highest)
         Collections.sort(offers, new Comparator<Oferta>() {
             @Override
             public int compare(Oferta o1, Oferta o2) {
-                return ((Double) o2.getPrecio()).compareTo((Double) o1.getPrecio());
+                return ((Double) o1.getPrecio()).compareTo((Double) o2.getPrecio());
             }
         });
         // Assign packages to offers
@@ -131,14 +139,14 @@ public class AzamonState {
 		Collections.sort(packages, new Comparator<Paquete>() {
             @Override
             public int compare(Paquete p1, Paquete p2) {
-                return ((Integer) p2.getPrioridad()).compareTo((Integer) p1.getPrioridad());
+                return ((Integer) p1.getPrioridad()).compareTo((Integer) p2.getPrioridad());
             }
         });
 		// Sort offers by date (lowest to highest)
         Collections.sort(offers, new Comparator<Oferta>() {
             @Override
             public int compare(Oferta o1, Oferta o2) {
-                return ((Integer) o2.getDias()).compareTo((Integer) o1.getDias());
+                return ((Integer) o1.getDias()).compareTo((Integer) o2.getDias());
             }
         });
         // Assign packages to offers
@@ -224,7 +232,50 @@ public class AzamonState {
 	}
 
 	
-	// setSelectedHeuristic !!!!!!!!
+	// PRINTS
+	public void showPackages() {
+		for (int i = 0; i < packages.size(); i++) {
+			Paquete p = packages.get(i);
+			System.out.println(i + ". " + p.toString());
+		}
+	}
+	
+	public void showOffers() {
+		for (int j = 0; j < offers.size(); j++) {
+			Oferta o = offers.get(j);
+			System.out.println(j + ". " + o.toString());
+		}
+	}
 
+	public void showPackageAssignments() {
+		System.out.println(packageAssignments);
+	}
+	
+	public void showOffersLoad() {
+		System.out.println(offersLoad);
+	}
+	
+	public void showPrice() {
+		System.out.println(price);
+	}
+	
+	public void showHappiness() {
+		System.out.println(happiness);
+	}
+	
+	public void show() {
+		System.out.println("# PACKAGES:");
+		showPackages();
+		System.out.println("# OFFERS:");
+		showOffers();
+		System.out.println("# PACKAGE ASSIGNMENTS:");
+		showPackageAssignments();
+		System.out.println("# OFFERS LOAD:");
+		showOffersLoad();
+		System.out.println("# PRICE:");
+		showPrice();
+		System.out.println("# HAPPINESS:");
+		showHappiness();
+	}
 }
 
