@@ -97,10 +97,21 @@ public class Create {
 			HeuristicFunction f_heuristic = (heuristic == 1)? new AzamonHeuristicCost(): new AzamonHeuristicHappiness();
 			
 			Problem problem = new Problem(azamonState, new AzamonSuccessorHillClimbing(), new AzamonGoalTest(), f_heuristic);
-			
+			System.out.println("Problem Created");
+
 			HillClimbingSearch hillClimbingSearch = new HillClimbingSearch();
+			System.out.println("Search Created");
+
+			SearchAgent agent = new SearchAgent(problem, hillClimbingSearch);
+			System.out.println("Agent Created");
+			
+			((AzamonState) hillClimbingSearch.getGoalState()).show();
+
+			List actions = agent.getActions();
+			showActions(actions);
 			
 			// execute(problem, hillClimbingSearch);
+
 		
 		} catch(Exception e){
 		    	System.out.println(e.getMessage());
@@ -110,6 +121,7 @@ public class Create {
 	private static void SimulatedAnnealingAlgorithm(){
 		System.out.println("###########################################");
 		AzamonState azamonState = CreateState();
+		azamonState.show();
 		try{
 			int heuristic = selectHeuristic();
 			heuristic = (heuristic == 1)?1:2;
@@ -118,21 +130,31 @@ public class Create {
 			HeuristicFunction f_heuristic = (heuristic == 1)? new AzamonHeuristicCost(): new AzamonHeuristicHappiness();
 			
 			Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(), new AzamonGoalTest(), f_heuristic);
+			System.out.println("Problem Created");
 			
-			SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch();
+			Search simulatedAnnealingSearch = new SimulatedAnnealingSearch();
+			System.out.println("Search Created");
 			
 			SearchAgent agent = new SearchAgent(problem, simulatedAnnealingSearch);
-			
+			System.out.println("Agent Created");
+
+			((AzamonState) simulatedAnnealingSearch.getGoalState()).show();
+
 			List actions = agent.getActions();
-			for(int i = 0; i < actions.size(); ++i){
-				String action = (String) actions.get(i);
-            	System.out.println(action);
-			}
+			showActions(actions);
 			
 			// execute(problem, simulatedAnnealingSearch);
 		
 		} catch(Exception e){
-		    	System.out.println(e.getMessage());
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+		}
+	}
+
+	private static void showActions(List actions){
+		for(int i = 0; i < actions.size(); ++i){
+			String action = actions.get(i).toString();
+			System.out.println(action);
 		}
 	}
 }
