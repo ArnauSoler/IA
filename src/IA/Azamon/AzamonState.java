@@ -16,36 +16,38 @@ public class AzamonState {
 	private Vector<Integer> packageAssignments;
 	private Vector<Double> offersLoad;	
 	
-	private int happiness;
 	private double price;
+	private int happiness;
+	
 	
 	// CONSTRUCTORS
 	public AzamonState(int numPaq, int seedPaquetes, double proportion, int seedOfertas) {
 		packages = new Paquetes(numPaq, seedPaquetes);
 		offers = new Transporte(packages, proportion, seedOfertas);
-		
 		packageAssignments = new Vector<Integer>(numPaq);
 		for (int i = 0; i < numPaq; i++) { packageAssignments.add(-1); }
-		
 		offersLoad = new Vector<Double>(offers.size());
 		for (int i = 0; i < offers.size(); i++) { offersLoad.add(0.0); }		
-		
-		/// He afegit aixo, nose si ta be
-		// happiness = computeHappiness();
-		// price = computePrice();
 	}
 	
 	public AzamonState(AzamonState state){
-		packages = state.packages;
-		offers = state.offers;
+		packages = state.getPackages();
+		offers = state.getOffers();
 		price = state.price;
-		
+		happiness = state.happiness;
         packageAssignments = new Vector<Integer> (state.packageAssignments);
         offersLoad = new Vector<Double> (state.offersLoad); 
     }
 	
 	
 	// METHODS
+	public Paquetes getPackages(){
+		return packages;
+	}
+	
+	public Transporte getOffers(){
+		return offers;
+	}
 	
 	public int getHappiness() {
 		return happiness;
@@ -81,20 +83,16 @@ public class AzamonState {
 		return happiness;
 	}
 	
-	public int daysToPriority(int days) {
-		if (days == 1) return 0;
-		if (days <= 3) return 1;
-		return 2;
-	}
-	
-	public int priorityToDays(int priority) {
-		if (priority == 0) return 1;
-		if (priority == 1) return 2;
-		return 4;
-	}
+	public boolean checkPriority(int priority, int offerDays){
+        if(priority == 0 & offerDays == 1) return true;
+        if(priority == 1 & offerDays <= 3) return true;
+        if(priority == 2 & offerDays <= 5) return true;
+        return false;
+    }
 	
 	
 	// INITIAL STATE GENERATORS
+	// This generator is made for price optimization
 	public void generateInitialStateA() {
 		// Sort packages by priority (lowest to highest)
 		Collections.sort(packages, new Comparator<Paquete>() {
@@ -116,14 +114,18 @@ public class AzamonState {
         	for (int j = 0; j < offers.size(); j++) {
         		Oferta offer = offers.get(j);
         		if ( (offer.getPesomax() - offersLoad.get(j)) >= p.getPeso() &&
-        			  p.getPrioridad() <= daysToPriority(offer.getDias()) ) {
+        			  checkPriority(p.getPrioridad(), offer.getDias()) ) {
         			packageAssignments.set(i, j);
         			offersLoad.set(j, offersLoad.get(j)+packages.get(i).getPeso());
+        			break;
         		}
         	}
         }
+        price = computePrice();
+        happiness = computeHappiness();
 	}
 
+	// This generator is made for happiness optimization
 	public void generateInitialStateB() {
 		// Sort packages by priority (lowest to highest)
 		Collections.sort(packages, new Comparator<Paquete>() {
@@ -139,9 +141,24 @@ public class AzamonState {
                 return ((Integer) o2.getDias()).compareTo((Integer) o1.getDias());
             }
         });
-		
+        // Assign packages to offers
+        for (int i = 0; i < packages.size(); i++) {
+        	Paquete p = packages.get(i);
+        	for (int j = 0; j < offers.size(); j++) {
+        		Oferta offer = offers.get(j);
+        		if ( (offer.getPesomax() - offersLoad.get(j)) >= p.getPeso() &&
+          			  checkPriority(p.getPrioridad(), offer.getDias()) ) {
+          			packageAssignments.set(i, j);
+          			offersLoad.set(j, offersLoad.get(j)+packages.get(i).getPeso());
+          			break;
+          		}
+        	}
+        }
+        price = computePrice();
+        happiness = computeHappiness();
 	}
 
+	// Random initialization for comparison purposes
 	public void generateInitialStateC() {
 		// TODO Auto-generated method stub
 		
@@ -152,86 +169,57 @@ public class AzamonState {
 		
 	}
 	
-	///////// Successors Methods
 	
-	public boolean checkPriority(int priority, int offerDays){
-        if(priority == 0 & offerDays == 1) return true;
-        if(priority == 1 & offerDays <= 3) return true;
-        if(priority == 2 & offerDays <= 5) return true;
-        return false;
-    }
-	
+	// SUCCESORS METHODS
 	public boolean canMove(int p_idx, int o_idx) {
-		
 		Paquete p = packages.get(p_idx);
 		Oferta o = offers.get(o_idx);
-		
 		double w = offersLoad.get(o_idx) + p.getPeso();
-	
 		if (w <= o.getPesomax()) {
-			
 			if(checkPriority(p.getPrioridad(), o.getDias())) {
-				
 				return true;
 			}
 		}
-		
 		return false;
 	}
 
 	public boolean movePackage(int p_idx, int o_idx) {
 		if (canMove(p_idx, o_idx)) {
-			
 			packageAssignments.set(p_idx, o_idx);
-			
 			offersLoad.set(packageAssignments.get(p_idx), offersLoad.get(packageAssignments.get(p_idx)) - packages.get(p_idx).getPeso());
 			offersLoad.set(o_idx, offersLoad.get(o_idx) + packages.get(p_idx).getPeso());
 			return true;
 		}
-		
 		return false;
 	}
 	
 	
 	public boolean canSwap(Paquete p1, Paquete p2, int o1_idx, int o2_idx) {
-		
 		Oferta o1 = offers.get(o1_idx);
 		Oferta o2 = offers.get(o2_idx);
-		
 		double w1 = offersLoad.get(o1_idx) + p2.getPeso() - p1.getPeso();
 		double w2 = offersLoad.get(o2_idx) - p2.getPeso() + p1.getPeso();
-		
-		if (w1<= o1.getPesomax() & w2 <= o2.getPesomax()) {
-			
+		if (w1 <= o1.getPesomax() & w2 <= o2.getPesomax()) {
 			if (checkPriority(p1.getPrioridad(), o2.getDias()) &
 				checkPriority(p2.getPrioridad(), o1.getDias())) {
-				
 				return true;
 			}
-			
 		}
 		return false;
 	}
 	
 	public boolean swapPackage(int p1_idx, int p2_idx) {
-	
 		int o1_idx = packageAssignments.get(p1_idx);
 		int o2_idx = packageAssignments.get(p2_idx);
-		
 		Paquete p1 = packages.get(p1_idx);
 		Paquete p2 = packages.get(p2_idx);
-		
 		if (canSwap(p1, p2, o1_idx, o2_idx)) {
-			
 			packageAssignments.set(p1_idx, o2_idx);
 			packageAssignments.set(p2_idx, o1_idx);
-			
 			offersLoad.set(o1_idx, offersLoad.get(o1_idx) - p1.getPeso() + p2.getPeso());
 			offersLoad.set(o2_idx, offersLoad.get(o2_idx) + p1.getPeso() - p2.getPeso());
-			
 			return true;
 		}
-		
 		return false;
 	}
 
