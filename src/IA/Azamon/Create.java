@@ -40,8 +40,11 @@ public class Create {
 		System.out.println("###	    Select the Generator	###");
 		System.out.println("###########################################");
 		System.out.println("### 1.	Generator A			###");
+		System.out.println("### 	Optimized Price			###");
 		System.out.println("### 2.	Generator B			###");
+		System.out.println("### 	Optimized Happiness		###");
 		System.out.println("### 3.	Generator C			###");
+		System.out.println("### 	Bad Initialization		###");	
 		System.out.println("###########################################");
 		int response = scan.nextInt();
 		return response;
@@ -81,8 +84,8 @@ public class Create {
 		System.out.println("### 1.	Min. transport/storage cost	###");
 		System.out.println("### 2.	Max. the customer happiness	###");
 		System.out.println("###########################################");
-		int response = scan.nextInt();
-		return response;
+		int heuristic = scan.nextInt();
+		return heuristic;
 	}
 
 	private static void HillClimbingAlgorithm(){
@@ -109,8 +112,6 @@ public class Create {
 
 			List actions = agent.getActions();
 			showActions(actions);
-			
-			// execute(problem, hillClimbingSearch);
 
 		
 		} catch(Exception e){
@@ -144,7 +145,6 @@ public class Create {
 			List actions = agent.getActions();
 			showActions(actions);
 			
-			// execute(problem, simulatedAnnealingSearch);
 		
 		} catch(Exception e){
 				System.out.println(e.getMessage());
