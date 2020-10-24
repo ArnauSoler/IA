@@ -3,6 +3,8 @@ package IA.Azamon;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
+
 
 import aima.search.framework.Successor;
 import aima.search.framework.SuccessorFunction;
@@ -12,17 +14,21 @@ import java.util.Random;
 public class AzamonSuccessorSimulatedAnnealing implements SuccessorFunction { 
 	
 	private static Random r;
+	private static int operator;
 	
-	public AzamonSuccessorSimulatedAnnealing() {
-        r = new Random();
+	public AzamonSuccessorSimulatedAnnealing(int op) {
+		r = new Random();
+		operator = op; // 1 = move, 2 = swap, 3 = both operators
     }
 
-	public List<Successor> getSuccessors(Object aState) {
-		ArrayList<Successor> successors = new ArrayList<>();
+	public Vector<Successor> getSuccessors(Object aState) {
+		Vector<Successor> successors = new Vector<>();
 		boolean done = false;
 		while(!done){
 			int packageIndex = r.nextInt(AzamonState.packages.size());
-			if(r.nextInt(2) == 0){
+			int nextOp = operator - 1;
+			if(nextOp == 2) nextOp = r.nextInt(2);
+			if(nextOp == 0){
 				int offerIndex = r.nextInt(AzamonState.offers.size());
 				
 				AzamonState newState = new AzamonState((AzamonState) aState);

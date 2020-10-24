@@ -29,12 +29,14 @@ public class Experiments {
 		int seedPaquetes = 1234;
 		double proportion = 1.2;
 		int seedOfertas = 1234;
+
+		int operators = 3;
 		
 		AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion, seedOfertas);
 		
 		HeuristicFunction f_heuristic = new AzamonHeuristicCost();
 		
-		Problem problem = new Problem(azamonState, new AzamonSuccessorHillClimbing(), new AzamonGoalTest(), f_heuristic);
+		Problem problem = new Problem(azamonState, new AzamonSuccessorHillClimbing(operators), new AzamonGoalTest(), f_heuristic);
 		
 		HillClimbingSearch hillClimbingSearch = new HillClimbingSearch();
 		

@@ -48,7 +48,7 @@ public class Create {
 		System.out.println("###########################################");
 		int response = scan.nextInt();
 		return response;
-	    }
+	}
 	
 	private static AzamonState CreateState(){
 
@@ -88,10 +88,23 @@ public class Create {
 		return heuristic;
 	}
 
+	private static int selectOperators(){
+		System.out.println("###########################################");
+		System.out.println("###	    Select the Operators	###");
+		System.out.println("###########################################");
+		System.out.println("### 1.	Move package to empty space	###");
+		System.out.println("### 2.	Swap to packages		###");
+		System.out.println("### 3.	Both operators			###");
+		System.out.println("###########################################");
+		int operators = scan.nextInt();
+		if(operators < 1 || operators > 3) operators = 3;
+		return operators;
+	}
+
 	private static void HillClimbingAlgorithm(){
 		System.out.println("###########################################");
-
 		AzamonState azamonState = CreateState();
+		azamonState.show();
 		try{
 			int heuristic = selectHeuristic();
 			heuristic = (heuristic == 1)?1:2;
@@ -99,7 +112,8 @@ public class Create {
 
 			HeuristicFunction f_heuristic = (heuristic == 1)? new AzamonHeuristicCost(): new AzamonHeuristicHappiness();
 			
-			Problem problem = new Problem(azamonState, new AzamonSuccessorHillClimbing(), new AzamonGoalTest(), f_heuristic);
+			int op = selectOperators();
+			Problem problem = new Problem(azamonState, new AzamonSuccessorHillClimbing(op), new AzamonGoalTest(), f_heuristic);
 			System.out.println("Problem Created");
 
 			HillClimbingSearch hillClimbingSearch = new HillClimbingSearch();
@@ -131,7 +145,8 @@ public class Create {
 
 			HeuristicFunction f_heuristic = (heuristic == 1)? new AzamonHeuristicCost(): new AzamonHeuristicHappiness();
 			
-			Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(), new AzamonGoalTest(), f_heuristic);
+			int op = selectOperators();
+			Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(op), new AzamonGoalTest(), f_heuristic);
 			System.out.println("Problem Created");
 			
 			Search simulatedAnnealingSearch = new SimulatedAnnealingSearch(100, 20, 5, 0.01);

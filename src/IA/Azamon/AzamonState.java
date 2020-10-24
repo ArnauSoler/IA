@@ -317,10 +317,10 @@ public class AzamonState {
 	}
 	
 	public void show() {
-		System.out.println("# PACKAGES:");
-		showPackages();
-		System.out.println("# OFFERS:");
-		showOffers();
+		// System.out.println("# PACKAGES:");
+		// showPackages();
+		// System.out.println("# OFFERS:");
+		// showOffers();
 		System.out.println("# PACKAGE ASSIGNMENTS:");
 		showPackageAssignments();
 		System.out.println("# OFFERS LOAD:");

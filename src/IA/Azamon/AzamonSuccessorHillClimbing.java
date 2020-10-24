@@ -9,30 +9,40 @@ import aima.search.framework.Successor;
 import aima.search.framework.SuccessorFunction;
 
 public class AzamonSuccessorHillClimbing implements SuccessorFunction {  
+
+	private static int operator;
+
+	public AzamonSuccessorHillClimbing(int op){
+		operator = op; // 1 = move, 2 = swap, 3 = both operators
+	}
 	
 	public List<Successor> getSuccessors(Object aState) {
 		Vector<Successor> successors = new Vector<>();
 		AzamonState parent_state = (AzamonState) aState;
 		
-		for (int i = 0; i < parent_state.packages.size(); ++i) {	
-			for (int j = 0; j < parent_state.offers.size(); ++j) {
-				AzamonState child_state = new AzamonState(parent_state);
-				if(child_state.movePackage(i, j)){
-					StringBuffer S = new StringBuffer();
-					S.append("moving package " + i + " to offer " + j + "\n");
-					// No acabo de tenir clar que s'ha de passar com a primer arg.
-					successors.add(new Successor (S.toString(), child_state));
-					
+		for (int i = 0; i < AzamonState.packages.size(); ++i) {
+			if(operator == 3 || operator == 1){
+				for (int j = 0; j < AzamonState.offers.size(); ++j) {
+					AzamonState child_state = new AzamonState(parent_state);
+					if(child_state.movePackage(i, j)){
+						StringBuffer S = new StringBuffer();
+						S.append("moving package " + i + " to offer " + j + "\n");
+						// No acabo de tenir clar que s'ha de passar com a primer arg.
+						successors.add(new Successor (S.toString(), child_state));
+						
+					}
 				}
 			}
-			// fem i+1 perque no te sentit fer swap amb ell mateix
-			for(int j = i+1; j < parent_state.packages.size(); ++j){
-				AzamonState child_state = new AzamonState(parent_state);
-				if(child_state.swapPackage(i, j)){
-					StringBuffer S = new StringBuffer();
-					S.append("swapping package " + i + " with package " + j + "\n");
-					successors.add(new Successor (S.toString(), child_state));
-					
+			if(operator == 3 || operator == 2){	
+				// fem i+1 perque no te sentit fer swap amb ell mateix
+				for(int j = i+1; j < AzamonState.packages.size(); ++j){
+					AzamonState child_state = new AzamonState(parent_state);
+					if(child_state.swapPackage(i, j)){
+						StringBuffer S = new StringBuffer();
+						S.append("swapping package " + i + " with package " + j + "\n");
+						successors.add(new Successor (S.toString(), child_state));
+						
+					}
 				}
 			}
 		}
