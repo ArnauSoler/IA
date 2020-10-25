@@ -208,7 +208,16 @@ public class AzamonState {
 	// SUCCESORS METHODS
 	public double updatePrice(Paquete p, Oferta oldOffer, Oferta newOffer) {
 		double priceDelta = p.getPeso() * (newOffer.getPrecio()-oldOffer.getPrecio());
-		price += priceDelta;
+		double priceStorageOld = 0;
+		if (oldOffer.getDias() == 5) priceStorageOld = 2*0.25*p.getPeso();
+		else if (oldOffer.getDias() >= 3) priceStorageOld += 0.25*p.getPeso();
+
+		double priceStorageNew = 0;
+		if (newOffer.getDias() == 5) priceStorageNew = 2*0.25*p.getPeso();
+		else if (newOffer.getDias() >= 3) priceStorageNew += 0.25*p.getPeso();
+		
+		priceDelta += (priceStorageNew - priceStorageOld);
+		
 		return priceDelta;
 	}
 	
@@ -242,7 +251,7 @@ public class AzamonState {
 			offersLoad.set(packageAssignments.get(p_idx), offersLoad.get(packageAssignments.get(p_idx)) - p.getPeso());
 			offersLoad.set(o_idx, offersLoad.get(o_idx) + p.getPeso());
 			// Update price and happiness
-			price += p.getPeso() * (o2.getPrecio()-o1.getPrecio());
+			price += updatePrice(p, o1, o2);
 			updateHappiness(p, o1, o2);
 			return true;
 		}
@@ -276,7 +285,9 @@ public class AzamonState {
 			offersLoad.set(o1_idx, offersLoad.get(o1_idx) - p1.getPeso() + p2.getPeso());
 			offersLoad.set(o2_idx, offersLoad.get(o2_idx) + p1.getPeso() - p2.getPeso());
 			// Update price and happiness (for both packages)
-			price += (p2.getPeso()-p1.getPeso()) * (offers.get(o2_idx).getPrecio()-offers.get(o1_idx).getPrecio());
+			// price += (p2.getPeso()-p1.getPeso()) * (offers.get(o2_idx).getPrecio()-offers.get(o1_idx).getPrecio());
+			price += updatePrice(p1, offers.get(o1_idx), offers.get(o2_idx));
+			price += updatePrice(p2, offers.get(o2_idx), offers.get(o1_idx));
 			updateHappiness(p1, offers.get(o1_idx), offers.get(o2_idx));
 			updateHappiness(p2, offers.get(o2_idx), offers.get(o1_idx));
 			return true;
