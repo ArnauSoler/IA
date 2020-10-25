@@ -21,7 +21,7 @@ public class Experiments {
 		System.out.println("### 1.	Experiment Number 1 		###");
 		System.out.println("### 2.	Experiment Number 2 		###");
 		System.out.println("### 3.	Experiment Number 3 		###");
-		System.out.println("### 3.	Experiment Number 4 		###");
+		System.out.println("### 4.	Experiment Number 4 		###");
 		
 		switch(scan.nextInt()){
 	    case 0:
@@ -78,7 +78,7 @@ public class Experiments {
                 e.printStackTrace();
             }		
 		}
-		System.out.println("Mean price: " + meanPrice/10);
+		System.out.println("Price: " + (double) Math.round(meanPrice) / 10);
 		System.out.println("Mean time: " + Math.round(meanTime/1000000)/10 + " miliseconds");
 	}
 
@@ -232,7 +232,7 @@ public class Experiments {
 			double meanPrice = 0;
 			double price = 0;
 			long meanTime = 0;
-			int iterations = 5;
+			int iterations = 3;
 			
 			for (int i = 0; i < 10; ++i) {
 				try {
@@ -267,7 +267,7 @@ public class Experiments {
 			double meanPrice = 0;
 			double price = 0;
 			long meanTime = 0;
-			int iterations = 5;
+			int iterations = 1;
 			
 			for (int i = 0; i < iterations; ++i) {
 				try {
