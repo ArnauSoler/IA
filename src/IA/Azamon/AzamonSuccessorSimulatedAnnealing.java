@@ -33,7 +33,6 @@ public class AzamonSuccessorSimulatedAnnealing implements SuccessorFunction {
 				if(newState.movePackage(packageIndex, offerIndex)) {
 					StringBuffer S = new StringBuffer();
 					S.append("moving package " + packageIndex + " to offer " + offerIndex + "\n");
-
 					successors.add(new Successor(S.toString(), newState));
 					done = true;
 				}
@@ -45,15 +44,12 @@ public class AzamonSuccessorSimulatedAnnealing implements SuccessorFunction {
 				if(packageIndex != packageIndex2 && newState.swapPackage(packageIndex, packageIndex2)){
 					StringBuffer S = new StringBuffer();
 					S.append("swapping package " + packageIndex + " with package " + packageIndex2 + "\n");
-
 					successors.add(new Successor(S.toString(), newState));
 					done = true;
 				}
 			}
 		}
-
 		return successors;
-
 	}
 
 }
