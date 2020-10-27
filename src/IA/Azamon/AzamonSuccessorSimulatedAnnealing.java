@@ -19,6 +19,11 @@ public class AzamonSuccessorSimulatedAnnealing implements SuccessorFunction {
 		operator = op; // 1 = move, 2 = swap, 3 = both operators
     }
 
+	public AzamonSuccessorSimulatedAnnealing() {
+		r = new Random();
+		operator = 3;
+	}
+
 	public List<Successor> getSuccessors(Object aState) {
 		List<Successor> successors = new ArrayList<>();
 		boolean done = false;
