@@ -1,0 +1,24 @@
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 1234
+- Proportion: 1.2, seed: 1234
+······································
+
+Initial price: 796,6400
+Initial happiness: 0
+
+******* Results *********
+Operator: Move
+Mean Price: 794.8999999999995
+Mean time: 68 miliseconds
+
+******* Results *********
+Operator: Swap
+Mean Price: 794.7849999999995
+Mean time: 58 miliseconds
+
+******* Results *********
+Operator: Move & Swap
+Mean Price: 794.2849999999996
+Mean time: 68 miliseconds
+

@@ -1,5 +1,8 @@
 package IA.Azamon;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.text.DecimalFormat;
 import java.util.List;
 import java.util.Scanner;
@@ -13,6 +16,31 @@ import aima.search.informed.SimulatedAnnealingSearch;
 
 public class Experiments {
 	private static Scanner scan = new Scanner(System.in);
+	private static BufferedWriter buffer;
+	
+	private static void Output(String file) {
+        try {
+        	buffer = new BufferedWriter(new FileWriter(new File("outputs/"+ file)));
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+	
+	public static boolean buffer_functions(String s, String action) {
+		try {
+			if (action == "write") {
+				buffer.write(s);
+				return true;
+			}
+			else if (action == "close") {
+				buffer.close();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
 	
 	public static void main(String[] args) {
 		System.out.println("###########################################");
@@ -23,12 +51,13 @@ public class Experiments {
 		System.out.println("### 2.	Experiment Number 2 		###");
 		System.out.println("### 3.	Experiment Number 3 		###");
 		System.out.println("### 4.	Experiment Number 4 		###");
-		System.out.println("### 5.	Experiment Number 6 		###");
-		System.out.println("### 6.	Experiment Number 7.1 		###");
-		System.out.println("### 7.	Experiment Number 7.2 		###");
-		System.out.println("### 8.	Experiment Number 7.4 		###");
-		System.out.println("### 9.	Experiment Number 7.6 		###");
-		
+		System.out.println("### 6.	Experiment Number 6 		###");
+		System.out.println("### 71.	Experiment Number 7.1 		###");
+		System.out.println("### 72.	Experiment Number 7.2 		###");
+		System.out.println("### 74.	Experiment Number 7.4 		###");
+		System.out.println("### 76.	Experiment Number 7.6 		###");
+		System.out.println("###########################################");
+
 		switch(scan.nextInt()){
 	    case 0:
 			SpecialExperiment();
@@ -45,25 +74,30 @@ public class Experiments {
 		case 4:
 			experiment4();
 			break;
-		case 5:
+		case 6:
 			experiment6();
 			break;
-		case 6:
+		case 71:
 			experiment1_annealing();
 			break;
-		case 7:
+		case 72:
 			experiment2_annealing();
 			break;
-		case 8:
+		case 74:
 			experiment4_annealing();
 			break;
-		case 9:
+		case 76:
 			experiment6_annealing();
 			break;
 		}
 	}
 	
 	private static void SpecialExperiment(){
+		
+		Output("SpecialExperiment.txt");
+		
+		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
+		
 		int numPaq = 100;
 		int seedPaquetes = 1234;
 		double proportion = 1.2;
@@ -71,8 +105,18 @@ public class Experiments {
 
 		int operators = 3;
 		
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seed: " + seedPaquetes + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seed: " + seedOfertas + "\n", "write");
+		buffer_functions("- Operators: Move & Swap \n", "write");
+		buffer_functions("······································" +"\n", "write");
+		
 		AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion, seedOfertas);
 		azamonState.generateInitialStateC();
+		
+		buffer_functions("\nInitial price: " + numberFormat.format(azamonState.getPrice()) + "\n", "write");
+		buffer_functions("Initial happiness: " + azamonState.getHappiness() + "\n", "write");
+		buffer_functions("\n", "write");
 
 		System.out.println("Initial price: " + azamonState.getPrice());
 		System.out.println("Initial happiness: " + azamonState.getHappiness() + "\n");
@@ -86,8 +130,11 @@ public class Experiments {
 		double meanPrice = 0;
 		double price = 0;
 		long meanTime = 0;
+		int iterations = 10;
 		
-		for (int i = 0; i < 10; ++i) {
+		buffer_functions("******* Results *********\n", "write");
+
+		for (int i = 0; i < iterations; ++i) {
 			try {
 				long time = System.nanoTime();
 				SearchAgent searchAgent = new SearchAgent(problem, hillClimbingSearch);
@@ -102,19 +149,39 @@ public class Experiments {
                 e.printStackTrace();
             }		
 		}
-		System.out.println("Price: " + (double) Math.round(meanPrice) / 10);
-		System.out.println("Mean time: " + Math.round(meanTime/1000000)/10 + " miliseconds");
+
+		buffer_functions("Mean Price: " + (double) Math.round(meanPrice) / iterations + "\n", "write");
+		buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds", "write");
+		
+		System.out.println("Mean Price: " + (double) Math.round(meanPrice) / iterations);
+		System.out.println("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds");
+		
+		buffer_functions(null, "close");
 	}
 
 	private static void experiment1(){
+		
+		Output("Experiment1_HC.txt");
+		
+		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
+
 		int numPaq = 100;
 		int seedPaquetes = 1234;
 		double proportion = 1.2;
 		int seedOfertas = 1234;
 		
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seed: " + seedPaquetes + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seed: " + seedOfertas + "\n", "write");
+		buffer_functions("······································" +"\n", "write");
+		
 		AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion, seedOfertas);
 		azamonState.generateInitialStateA();
-
+		
+		buffer_functions("\nInitial price: " + numberFormat.format(azamonState.getPrice()) + "\n", "write");
+		buffer_functions("Initial happiness: " + azamonState.getHappiness() + "\n", "write");
+		buffer_functions("\n", "write");
+		
 		System.out.println("Initial price: " + azamonState.getPrice());
 		System.out.println("Initial happiness: " + azamonState.getHappiness() + "\n");
 		
@@ -147,19 +214,39 @@ public class Experiments {
 					e.printStackTrace();
 				}		
 			}
+			buffer_functions("\nOperator: " + operators[j] + "\n", "write");
+			
+			buffer_functions("******* Results *********", "write");
+			
+			buffer_functions("Mean Price: " + meanPrice/iterations + "\n", "write");
+			buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n\n", "write");
+			
 			System.out.println("Operator: " + operators[j]);
 			System.out.println("Mean price: " + meanPrice/iterations);
 			System.out.println("Mean time: " + Math.round(meanTime/1000000)/iterations);
 			System.out.println("");
+			
 		}
+		
+		buffer_functions(null, "close");
 	}
 
 	private static void experiment2(){
+		
+		Output("Experiment2_HC.txt");
+		
+		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
+		
 		int numPaq = 100;
 		int seedPaquetes = 1234;
 		double proportion = 1.2;
 		int seedOfertas = 1234;
 		String[] states = {"A","B","C"};
+		
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seed: " + seedPaquetes + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seed: " + seedOfertas + "\n", "write");
+		buffer_functions("······································" +"\n", "write");
 		
 		for(int j = 0; j < 3; ++j){
 			AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion, seedOfertas);
@@ -167,6 +254,10 @@ public class Experiments {
 			if(j == 0) azamonState.generateInitialStateA();
 			else if(j == 1) azamonState.generateInitialStateB();
 			else azamonState.generateInitialStateC();
+			
+			buffer_functions("\nInitial State: " + states[j] + "\n", "write");
+			buffer_functions("Initial price: " + numberFormat.format(azamonState.getPrice()) + "\n", "write");
+			buffer_functions("Initial happiness: " + azamonState.getHappiness() + "\n", "write");	
 			
 			System.out.println("Initial State: " + states[j]);
 			System.out.println("Initial price: " + azamonState.getPrice());
@@ -181,8 +272,11 @@ public class Experiments {
 			double meanPrice = 0;
 			double price = 0;
 			long meanTime = 0;
+			int iterations = 10;
 			
-			for (int i = 0; i < 10; ++i) {
+			buffer_functions("\n******* Results *********\n", "write");
+			
+			for (int i = 0; i < iterations; ++i) {
 				try {
 					long time = System.nanoTime();
 					SearchAgent searchAgent = new SearchAgent(problem, hillClimbingSearch);
@@ -195,16 +289,27 @@ public class Experiments {
 					e.printStackTrace();
 				}		
 			}
-			System.out.println("Mean price: " + meanPrice/10);
-			System.out.println("Mean time: " + Math.round(meanTime/1000000)/10 + "\n");
+			buffer_functions("Mean Price: " + meanPrice/iterations + "\n", "write");
+			buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n", "write");
+			System.out.println("Mean price: " + meanPrice/iterations);
+			System.out.println("Mean time: " + Math.round(meanTime/1000000)/iterations + "\n");
 		}
+		buffer_functions(null, "close");
 	}
 
 	private static void experiment3(){
+		
+		Output("Experiment3_SA.txt");
+		
 		int numPaq = 100;
 		int seedPaquetes = 1234;
 		double proportion = 1.2;
 		int seedOfertas = 1234;
+		
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seed: " + seedPaquetes + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seed: " + seedOfertas + "\n", "write");
+		buffer_functions("······································\n" +"\n", "write");
 
 		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
 		
@@ -241,6 +346,10 @@ public class Experiments {
 								e.printStackTrace();
 							}		
 						}
+						buffer_functions("Steps: " + steps * j + " \t|\tStiter: " + stiter * j * w + " \t|\tK: " + k + " \t|\tLamb: " + numberFormat.format(lamb), "write");
+						buffer_functions("\t|\tMean price: " + numberFormat.format(meanPrice / 10), "write");
+						buffer_functions("\t|\tMean time: " + Math.round(meanTime/1000000) + " miliseconds\n", "write");
+						
 						System.out.print("Steps: " + steps * j + " \t|\tStiter: " + stiter * j * w + " \t|\tK: " + k + " \t|\tLamb: " + numberFormat.format(lamb));
 						System.out.print("\t|\tMean price: " + numberFormat.format(meanPrice / 10));
 						System.out.println("\t|\tMean time: " + Math.round(meanTime/1000000) + "\n");
@@ -248,13 +357,22 @@ public class Experiments {
 				}
 			}
 		}
+		buffer_functions(null, "close");
 	}
 
 	private static void experiment4(){
+		
+		Output("Experiment4_HC.txt");
+		
 		int numPaq = 100;
 		int seedPaquetes = 1234;
 		double proportion = 1.2;
 		int seedOfertas = 1234;
+		
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seed: " + seedPaquetes + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seed: " + seedOfertas + "\n", "write");
+		buffer_functions("······································\n" +"\n", "write");
 		
 		for(int j = 0; j < 10; ++j){
 			AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion + 0.2*j, seedOfertas);
@@ -272,6 +390,8 @@ public class Experiments {
 			long meanTime = 0;
 			int iterations = 3;
 			
+			buffer_functions("\n******* Results *********\n", "write");
+
 			for (int i = 0; i < iterations; ++i) {
 				try {
 					long time = System.nanoTime();
@@ -285,6 +405,11 @@ public class Experiments {
 					e.printStackTrace();
 				}		
 			}
+			buffer_functions("Proportion: " + (proportion + 0.2*j) + "\n", "write");
+			buffer_functions("Initial price: " + azamonState.getPrice() + "\n", "write");
+			buffer_functions("Mean price: " + meanPrice/iterations + "\n", "write");
+			buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n", "write");
+			
 			System.out.println("Proportion: " + (proportion + 0.2*j));
 			System.out.println("Initial price: " + azamonState.getPrice());
 			System.out.println("Mean price: " + meanPrice/iterations);
@@ -308,6 +433,8 @@ public class Experiments {
 			long meanTime = 0;
 			int iterations = 1;
 			
+			buffer_functions("\n******* Results *********\n", "write");
+			
 			for (int i = 0; i < iterations; ++i) {
 				try {
 					long time = System.nanoTime();
@@ -321,6 +448,11 @@ public class Experiments {
 					e.printStackTrace();
 				}		
 			}
+			
+			buffer_functions("Packages: " + (numPaq + 50*j) + "\n", "write");
+			buffer_functions("Initial price: " + azamonState.getPrice() + "\n", "write");
+			buffer_functions("Mean price: " + meanPrice/iterations + "\n", "write");
+			buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n", "write");
 
 			System.out.println("Packages: " + (numPaq + 50*j));
 			System.out.println("Initial price: " + azamonState.getPrice());
@@ -328,23 +460,41 @@ public class Experiments {
 			System.out.println("Mean time: " + Math.round(meanTime/1000000)/iterations);
 			System.out.println("");
 		}
+		
+		buffer_functions(null, "close");
 	}
 
 	private static void experiment6(){
+		
+		Output("Experiment6_HC.txt");
+		
+		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
+		
 		int numPaq = 100;
 		int seedPaquetes = 1234;
 		double proportion = 1.2;
 		int seedOfertas = 1234;
 		
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seed: " + seedPaquetes + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seed: " + seedOfertas + "\n", "write");
+		buffer_functions("······································\n" +"\n", "write");
+		
 		AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion, seedOfertas);
 		azamonState.generateInitialStateA();
-
+		
+		buffer_functions("Initial price: " + numberFormat.format(azamonState.getPrice()) + "\n", "write");
+		buffer_functions("Initial happiness: " + azamonState.getHappiness() + "\n", "write");	
+		
 		System.out.println("Initial price: " + azamonState.getPrice());
 		System.out.println("Initial happiness: " + azamonState.getHappiness() + "\n");
 		
 		for(int k = 0; k < 15; ++k){
 			System.out.println("###########################################");
-			System.out.println("Epsilon happines: " + k);
+			System.out.println("Epsilon happiness: " + k);
+			buffer_functions("\n----------------------\n", "write");
+			buffer_functions("Epsilon happiness: " + k + "\n", "write");
+			buffer_functions("----------------------\n", "write");
 			HeuristicFunction f_heuristic = new AzamonHeuristicHappiness(k);
 			String[] operators = {"Move","Swap","Move & Swap"};
 			
@@ -378,6 +528,15 @@ public class Experiments {
 						e.printStackTrace();
 					}		
 				}
+				
+				buffer_functions("\nOperator: " + operators[j] + "\n", "write");
+				
+				buffer_functions("\n******* Results *********\n", "write");
+
+				buffer_functions("Mean Price: " + meanPrice/iterations + "\n", "write");
+				buffer_functions("Mean happiness: " + meanHappiness/iterations + "\n", "write");
+				buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n", "write");
+				
 				System.out.println("Operator: " + operators[j]);
 				System.out.println("Mean price: " + meanPrice/iterations);
 				System.out.println("Mean happiness: " + meanHappiness/iterations);
@@ -385,20 +544,35 @@ public class Experiments {
 				System.out.println("");
 			}
 		}
+		buffer_functions(null, "close");
 
 	}
 
 	private static void experiment1_annealing(){
+		
+		Output("Experiment1_SA.txt");
+		
+		
+		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
+
 		int numPaq = 100;
 		int seedPaquetes = 1234;
 		double proportion = 1.2;
 		int seedOfertas = 1234;
 		
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seed: " + seedPaquetes + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seed: " + seedOfertas + "\n", "write");
+		buffer_functions("······································" +"\n", "write");
+		
 		AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion, seedOfertas);
-		azamonState.generateInitialStateC();
-
+		azamonState.generateInitialStateA();
+		
+		buffer_functions("\nInitial price: " + numberFormat.format(azamonState.getPrice()) + "\n", "write");
+		buffer_functions("Initial happiness: " + azamonState.getHappiness() + "\n", "write");
+		
 		System.out.println("Initial price: " + azamonState.getPrice());
-		System.out.println("Initial happiness: " + azamonState.getHappiness() + "\n");
+		System.out.println("Initial happiness: " + azamonState.getHappiness());
 		
 		HeuristicFunction f_heuristic = new AzamonHeuristicCost();
 		String[] operators = {"Move","Swap","Move & Swap"};
@@ -433,19 +607,38 @@ public class Experiments {
 					e.printStackTrace();
 				}		
 			}
+			buffer_functions("\nOperator: " + operators[j] + "\n", "write");
+			
+			buffer_functions("\n******* Results *********\n", "write");
+			
+			buffer_functions("Mean Price: " + meanPrice/iterations + "\n", "write");
+			buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n", "write");
+			
 			System.out.println("Operator: " + operators[j]);
 			System.out.println("Mean price: " + meanPrice/iterations);
 			System.out.println("Mean time: " + Math.round(meanTime/1000000)/iterations);
 			System.out.println("");
 		}
+		
+		buffer_functions(null, "close");
 	}
 
 	private static void experiment2_annealing(){
+		
+		Output("Experiment2_SA.txt");
+		
+		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
+		
 		int numPaq = 100;
 		int seedPaquetes = 1234;
 		double proportion = 1.2;
 		int seedOfertas = 1234;
 		String[] states = {"A","B","C"};
+		
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seed: " + seedPaquetes + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seed: " + seedOfertas + "\n", "write");
+		buffer_functions("······································" +"\n", "write");
 		
 		for(int j = 0; j < 3; ++j){
 			AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion, seedOfertas);
@@ -453,6 +646,10 @@ public class Experiments {
 			if(j == 0) azamonState.generateInitialStateA();
 			else if(j == 1) azamonState.generateInitialStateB();
 			else azamonState.generateInitialStateC();
+			
+			buffer_functions("\nInitial State: " + states[j] + "\n", "write");
+			buffer_functions("Initial price: " + numberFormat.format(azamonState.getPrice()) + "\n", "write");
+			buffer_functions("Initial happiness: " + azamonState.getHappiness() + "\n", "write");	
 			
 			System.out.println("Initial State: " + states[j]);
 			System.out.println("Initial price: " + azamonState.getPrice());
@@ -471,8 +668,11 @@ public class Experiments {
 			double meanPrice = 0;
 			double price = 0;
 			long meanTime = 0;
+			int iterations = 10;
 			
-			for (int i = 0; i < 10; ++i) {
+			buffer_functions("\n******* Results *********\n", "write");
+			
+			for (int i = 0; i < iterations; ++i) {
 				try {
 					long time = System.nanoTime();
 					SearchAgent searchAgent = new SearchAgent(problem, simulatedAnnealingSearch);
@@ -485,16 +685,29 @@ public class Experiments {
 					e.printStackTrace();
 				}		
 			}
+			buffer_functions("Mean Price: " + meanPrice/iterations + "\n", "write");
+			buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n", "write");
+			
 			System.out.println("Mean price: " + meanPrice/10);
 			System.out.println("Mean time: " + Math.round(meanTime/1000000)/10 + "\n");
 		}
+		
+		buffer_functions(null, "close");
 	}
 
 	private static void experiment4_annealing(){
+		
+		Output("Experiment4_SA.txt");
+		
 		int numPaq = 100;
 		int seedPaquetes = 1234;
 		double proportion = 1.2;
 		int seedOfertas = 1234;
+		
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seed: " + seedPaquetes + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seed: " + seedOfertas + "\n", "write");
+		buffer_functions("······································\n" +"\n", "write");
 		
 		for(int j = 0; j < 10; ++j){
 			AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion + 0.2*j, seedOfertas);
@@ -516,6 +729,8 @@ public class Experiments {
 			long meanTime = 0;
 			int iterations = 3;
 			
+			buffer_functions("\n******* Results *********\n", "write");
+			
 			for (int i = 0; i < iterations; ++i) {
 				try {
 					long time = System.nanoTime();
@@ -529,6 +744,11 @@ public class Experiments {
 					e.printStackTrace();
 				}		
 			}
+			buffer_functions("Proportion: " + (proportion + 0.2*j) + "\n", "write");
+			buffer_functions("Initial price: " + azamonState.getPrice() + "\n", "write");
+			buffer_functions("Mean price: " + meanPrice/iterations + "\n", "write");
+			buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n", "write");
+			
 			System.out.println("Proportion: " + (proportion + 0.2*j));
 			System.out.println("Initial price: " + azamonState.getPrice());
 			System.out.println("Mean price: " + meanPrice/iterations);
@@ -556,6 +776,8 @@ public class Experiments {
 			long meanTime = 0;
 			int iterations = 1;
 			
+			buffer_functions("\n******* Results *********\n", "write");
+			
 			for (int i = 0; i < iterations; ++i) {
 				try {
 					long time = System.nanoTime();
@@ -569,30 +791,53 @@ public class Experiments {
 					e.printStackTrace();
 				}		
 			}
-
+			
+			buffer_functions("Packages: " + (numPaq + 50*j) + "\n", "write");
+			buffer_functions("Initial price: " + azamonState.getPrice() + "\n", "write");
+			buffer_functions("Mean price: " + meanPrice/iterations + "\n", "write");
+			buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n", "write");
+			
 			System.out.println("Packages: " + (numPaq + 50*j));
 			System.out.println("Initial price: " + azamonState.getPrice());
 			System.out.println("Mean price: " + meanPrice/iterations);
 			System.out.println("Mean time: " + Math.round(meanTime/1000000)/iterations);
 			System.out.println("");
 		}
+		
+		buffer_functions(null, "close");
 	}
 
 	private static void experiment6_annealing(){
+		
+		Output("Experiment6_SA.txt");
+		
+		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
+		
 		int numPaq = 100;
 		int seedPaquetes = 1234;
 		double proportion = 1.2;
 		int seedOfertas = 1234;
 		
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seed: " + seedPaquetes + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seed: " + seedOfertas + "\n", "write");
+		buffer_functions("······································\n" +"\n", "write");
+		
 		AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion, seedOfertas);
 		azamonState.generateInitialStateA();
 
+		buffer_functions("Initial price: " + numberFormat.format(azamonState.getPrice()) + "\n", "write");
+		buffer_functions("Initial happiness: " + azamonState.getHappiness() + "\n", "write");	
+		
 		System.out.println("Initial price: " + azamonState.getPrice());
 		System.out.println("Initial happiness: " + azamonState.getHappiness() + "\n");
 		
 		for(int l = 0; l < 15; ++l){
 			System.out.println("###########################################");
 			System.out.println("Epsilon happines: " + l);
+			buffer_functions("\n----------------------\n", "write");
+			buffer_functions("Epsilon happiness: " + l + "\n", "write");
+			buffer_functions("----------------------\n", "write");
 			HeuristicFunction f_heuristic = new AzamonHeuristicHappiness(l);
 			String[] operators = {"Move","Swap","Move & Swap"};
 			
@@ -630,6 +875,15 @@ public class Experiments {
 						e.printStackTrace();
 					}		
 				}
+				
+				buffer_functions("\nOperator: " + operators[j] + "\n", "write");
+				
+				buffer_functions("\n******* Results *********\n", "write");
+
+				buffer_functions("Mean Price: " + meanPrice/iterations + "\n", "write");
+				buffer_functions("Mean happiness: " + meanHappiness/iterations + "\n", "write");
+				buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n", "write");
+				
 				System.out.println("Operator: " + operators[j]);
 				System.out.println("Mean price: " + meanPrice/iterations);
 				System.out.println("Mean happiness: " + meanHappiness/iterations);
@@ -637,6 +891,8 @@ public class Experiments {
 				System.out.println("");
 			}
 		}
+		
+		buffer_functions(null, "close");
 	}
 
 	// auxiliars

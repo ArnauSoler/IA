@@ -1,0 +1,29 @@
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 1234
+- Proportion: 1.2, seed: 1234
+······································
+
+Initial State: A
+Initial price: 796,6400
+Initial happiness: 0
+
+******* Results *********
+Mean Price: 796.2039999999995
+Mean time: 22 miliseconds
+
+Initial State: B
+Initial price: 1021,8550
+Initial happiness: 42
+
+******* Results *********
+Mean Price: 808.1894999999996
+Mean time: 12 miliseconds
+
+Initial State: C
+Initial price: 807,0900
+Initial happiness: 0
+
+******* Results *********
+Mean Price: 798.029
+Mean time: 10 miliseconds
