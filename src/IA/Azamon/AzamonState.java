@@ -198,6 +198,10 @@ public class AzamonState {
 		price = computePrice();
         happiness = computeHappiness();
 	}
+	
+	public void setSelectedHeuristic(int heuristic) {
+		// TODO Auto-generated method stub
+	}
 
 	// SUCCESORS METHODS
 	public double updatePrice(Paquete p, Oferta oldOffer, Oferta newOffer) {
