@@ -199,12 +199,6 @@ public class AzamonState {
         happiness = computeHappiness();
 	}
 
-	public void setSelectedHeuristic(int heuristic) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	
 	// SUCCESORS METHODS
 	public double updatePrice(Paquete p, Oferta oldOffer, Oferta newOffer) {
 		double priceDelta = p.getPeso() * (newOffer.getPrecio()-oldOffer.getPrecio());
