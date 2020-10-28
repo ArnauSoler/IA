@@ -31,9 +31,9 @@ public class AzamonState {
 		offers = state.getOffers();
 		price = state.price;
 		happiness = state.happiness;
-        packageAssignments = new Vector<Integer> (state.packageAssignments);
-        offersLoad = new Vector<Double> (state.offersLoad); 
-    }
+        	packageAssignments = new Vector<Integer> (state.packageAssignments);
+        	offersLoad = new Vector<Double> (state.offersLoad); 
+    	}
 	
 	
 	// METHODS
@@ -93,11 +93,11 @@ public class AzamonState {
 	}
 	
 	public boolean checkPriority(int priority, int offerDays){
-        if(priority == 0 & offerDays == 1) return true;
-        if(priority == 1 & offerDays <= 3) return true;
-        if(priority == 2 & offerDays <= 5) return true;
-        return false;
-    }
+        	if(priority == 0 & offerDays == 1) return true;
+        	if(priority == 1 & offerDays <= 3) return true;
+        	if(priority == 2 & offerDays <= 5) return true;
+        	return false;
+    	}
 	
 	
 	// INITIAL STATE GENERATORS
@@ -198,13 +198,11 @@ public class AzamonState {
 		price = computePrice();
         happiness = computeHappiness();
 	}
-
+	
 	public void setSelectedHeuristic(int heuristic) {
 		// TODO Auto-generated method stub
-		
 	}
-	
-	
+
 	// SUCCESORS METHODS
 	public double updatePrice(Paquete p, Oferta oldOffer, Oferta newOffer) {
 		double priceDelta = p.getPeso() * (newOffer.getPrecio()-oldOffer.getPrecio());
