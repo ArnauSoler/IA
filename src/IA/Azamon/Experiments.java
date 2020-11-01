@@ -347,7 +347,7 @@ public class Experiments {
 
 	private static void experiment3(){
 		
-		Output("Experiment3_SA.txt");
+		Output("Experiment3_SA_10000.txt");
 		
 		int numPaq = 100;
 		int seedPaquetes = 1234;
@@ -361,18 +361,20 @@ public class Experiments {
 		buffer_functions("Steps\tStiter\tK\tLamb\tprice\ttime\n", "write");
 		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
 		
-		for(int j = 1; j <= 10; ++j){
-			System.out.print(j + " ");
-			for(int w = 0; w < 10; ++w){
-				for(int k = 1; k <= 10; ++k){
-					for(int l = 1; l <= 5; ++l){
+		for(int j = 1; j <= 1; ++j){
+			// System.out.print(j + " ");
+			for(int w = 1; w < 1000; ++w){
+				System.out.print(w + " ");
+				for(int k = 0; k <= 3; ++k){
+					for(int l = 0; l <= 4; ++l){
 						double meanPrice = 0;
 						double price = 0;
 						long meanTime = 0;
 						
-						int steps = 1000;
+						int steps = 10000;
 						int stiters[] = {1, 2, 5, 10, 20, 50, 100, 200, 500, 1000};
-						double lamb = Math.pow(0.5, l);
+						int ks[] = {1, 5, 25, 125};
+						double lamb[] = {1, 0.5, 0.1, 0.05, 0.01};
 						
 						int iterations = 10;
 						for (int i = 0; i < iterations; ++i) {
@@ -382,7 +384,7 @@ public class Experiments {
 							HeuristicFunction f_heuristic = new AzamonHeuristicCost();
 							
 							Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(3), new AzamonGoalTest(), f_heuristic);
-							SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps * j, stiters[w], k, lamb);
+							SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps * j, w, ks[k], lamb[l]);
 						
 							try {
 								long time = System.nanoTime();
@@ -396,7 +398,7 @@ public class Experiments {
 								e.printStackTrace();
 							}		
 						}
-						buffer_functions(steps * j + " \t" + stiters[w] + " \t" + k + " \t" + numberFormat.format(lamb), "write");
+						buffer_functions(steps * j + " \t" + w + " \t" + k + " \t" + numberFormat.format(lamb[l]), "write");
 						buffer_functions("\t" + numberFormat.format(meanPrice / iterations), "write");
 						buffer_functions("\t" + ((float) Math.round(meanTime/1000000))/iterations + "\n", "write");
 						
