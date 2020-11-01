@@ -1,6 +1,6 @@
 # IA Project: Azamon
 
-[![HitCount](http://hits.dwyl.io/ArnauSoler/IA.svg)](http://hits.dwyl.io/ArnauSoler/IA)  [![GitHub stars](https://img.shields.io/github/stars/ArnauSoler/IA.svg)](https://GitHub.com/ArnauSoler/IA/stargazers/)  [![GitHub forks](https://img.shields.io/github/forks/ArnauSoler/IA.svg)](https://GitHub.com/ArnauSoler/IA/network/)  [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ArnauSoler/IA.svg)](https://github.com/ArnauSoler/IA)  [![GitHub contributors](https://img.shields.io/github/contributors/ArnauSoler/IA.svg)](https://GitHub.com/ArnauSoler/IA/graphs/contributors/)  [![GitHub license](https://img.shields.io/github/license/ArnauSoler/IA.svg)](https://github.com/ArnauSoler/IA/blob/master/LICENSE)
+[![HitCount](http://hits.dwyl.io/ArnauSoler/IA.svg)](http://hits.dwyl.io/ArnauSoler/IA)  [![GitHub stars](https://img.shields.io/github/stars/ArnauSoler/IA.svg)](https://GitHub.com/ArnauSoler/IA/stargazers/)  [![GitHub forks](https://img.shields.io/github/forks/ArnauSoler/IA.svg)](https://GitHub.com/ArnauSoler/IA/network/)  [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ArnauSoler/IA.svg)](https://github.com/ArnauSoler/IA)  [![GitHub contributors](https://img.shields.io/github/contributors/ArnauSoler/IA.svg)](https://GitHub.com/ArnauSoler/IA/graphs/contributors/)  
 
 ## Package distribution optimization using local search algorithms
 
