@@ -1,0 +1,27 @@
+
+······································
+······ Experiment Configuration ······ 
+- # Packages: 100, seeds: 1234, 2345, 3456, 4567, 5678, 6789, 7890, 8901, 9012, 123, 
+- Proportion: 1.2, seeds: 1234, 2345, 3456, 4567, 5678, 6789, 7890, 8901, 9012, 123, 
+······································
+
+Mean initial price: 938,7685
+Mean initial happiness: 0.0
+
+Operator: Move
+******* Results *********
+Mean Price: 938.72405
+Mean time: 12 miliseconds
+
+
+Operator: Swap
+******* Results *********
+Mean Price: 936.8446499999998
+Mean time: 35 miliseconds
+
+
+Operator: Move & Swap
+******* Results *********
+Mean Price: 938.6150999999998
+Mean time: 15 miliseconds
+
