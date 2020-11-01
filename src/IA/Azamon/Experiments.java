@@ -358,7 +358,7 @@ public class Experiments {
 		buffer_functions("- # Packages: " + numPaq + ", seeds: " + getSeeds() + "\n", "write");
 		buffer_functions("- Proportion: " + proportion + ", seeds: " + getSeeds() + "\n", "write");
 		buffer_functions("······································\n" +"\n", "write");
-
+		buffer_functions("Steps\tStiter\tK\tLamb\tprice\ttime\n", "write");
 		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
 		
 		for(int j = 1; j <= 5; ++j){
@@ -394,11 +394,11 @@ public class Experiments {
 								e.printStackTrace();
 							}		
 						}
-						buffer_functions("Steps: " + steps * j + " \t|\tStiter: " + stiter * j * w + " \t|\tK: " + k + " \t|\tLamb: " + numberFormat.format(lamb), "write");
-						buffer_functions("\t|\tMean price: " + numberFormat.format(meanPrice / 10), "write");
-						buffer_functions("\t|\tMean time: " + Math.round(meanTime/1000000) + " miliseconds\n", "write");
+						buffer_functions(steps * j + " \t" + stiter * j * w + " \t" + k + " \t" + numberFormat.format(lamb), "write");
+						buffer_functions("\t" + numberFormat.format(meanPrice / 10), "write");
+						buffer_functions("\t" + Math.round(meanTime/1000000) + "\n", "write");
 						
-						System.out.print("Steps: " + steps * j + " \t|\tStiter: " + stiter * j * w + " \t|\tK: " + k + " \t|\tLamb: " + numberFormat.format(lamb) + "\n");
+						// System.out.print("Steps: " + steps * j + " \t|\tStiter: " + stiter * j * w + " \t|\tK: " + k + " \t|\tLamb: " + numberFormat.format(lamb) + "\n");
 						// System.out.print("\t|\tMean price: " + numberFormat.format(meanPrice / 10));
 						// System.out.println("\t|\tMean time: " + Math.round(meanTime/1000000) + "\n");
 					}
