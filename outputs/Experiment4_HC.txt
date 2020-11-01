@@ -1,126 +1,66 @@
 
 ······ Experiment Configuration ······ 
-- # Packages: 100, seed: 1234
-- Proportion: 1.2, seed: 1234
+- # Packages: 100, seeds: 1234, 2345, 3456, 4567, 5678, 6789, 7890, 8901, 9012, 123, 
+- Proportion: 1.2, seeds: 1234, 2345, 3456, 4567, 5678, 6789, 7890, 8901, 9012, 123, 
 ······································
 
 
 ******* Results *********
 Proportion: 1.2
-Initial price: 807.0899999999997
-Mean price: 792.7549999999998
-Mean time: 65 miliseconds
+Mean initial price: 965.9834999999999
+Mean price: 919.0425000000002
+Mean time: 182 miliseconds
 
 ******* Results *********
 Proportion: 1.4
-Initial price: 823.9299999999996
-Mean price: 775.9799999999992
-Mean time: 110 miliseconds
+Mean initial price: 959.1785
+Mean price: 899.6845
+Mean time: 184 miliseconds
 
 ******* Results *********
 Proportion: 1.6
-Initial price: 817.8349999999997
-Mean price: 765.2499999999999
-Mean time: 154 miliseconds
+Mean initial price: 951.7139999999999
+Mean price: 889.052
+Mean time: 209 miliseconds
 
 ******* Results *********
 Proportion: 1.8
-Initial price: 795.75
-Mean price: 761.6650000000001
-Mean time: 80 miliseconds
+Mean initial price: 939.3459999999999
+Mean price: 885.1560000000002
+Mean time: 213 miliseconds
 
 ******* Results *********
 Proportion: 2.0
-Initial price: 809.18
-Mean price: 745.5650000000004
-Mean time: 221 miliseconds
-
-******* Results *********
-Proportion: 2.2
-Initial price: 823.7950000000002
-Mean price: 753.5750000000011
-Mean time: 163 miliseconds
-
-******* Results *********
-Proportion: 2.4000000000000004
-Initial price: 846.8149999999995
-Mean price: 709.2899999999989
-Mean time: 244 miliseconds
-
-******* Results *********
-Proportion: 2.6
-Initial price: 833.1150000000001
-Mean price: 697.7399999999997
-Mean time: 258 miliseconds
-
-******* Results *********
-Proportion: 2.8
-Initial price: 827.1350000000001
-Mean price: 689.5499999999997
-Mean time: 247 miliseconds
-
-******* Results *********
-Proportion: 3.0
-Initial price: 831.105
-Mean price: 709.6
-Mean time: 252 miliseconds
+Mean initial price: 943.1590000000002
+Mean price: 859.4100000000001
+Mean time: 266 miliseconds
 
 ******* Results *********
 Packages: 100
-Initial price: 807.0899999999997
-Mean price: 792.7549999999999
-Mean time: 18 miliseconds
+Initial price: 965.9835
+Mean price: 919.0425000000002
+Mean time: 130 miliseconds
 
 ******* Results *********
 Packages: 150
-Initial price: 1379.9500000000007
-Mean price: 1226.1100000000008
-Mean time: 548 miliseconds
+Initial price: 1495.0280000000004
+Mean price: 1381.6075000000005
+Mean time: 834 miliseconds
 
 ******* Results *********
 Packages: 200
-Initial price: 1846.199999999999
-Mean price: 1693.9099999999987
-Mean time: 916 miliseconds
+Initial price: 1979.6355000000007
+Mean price: 1831.2100000000003
+Mean time: 2476 miliseconds
 
 ******* Results *********
 Packages: 250
-Initial price: 2361.614999999995
-Mean price: 2192.0050000000006
-Mean time: 3168 miliseconds
+Initial price: 2468.1350000000006
+Mean price: 2229.0420000000004
+Mean time: 5918 miliseconds
 
 ******* Results *********
 Packages: 300
-Initial price: 2727.8000000000047
-Mean price: 2604.0250000000055
-Mean time: 4662 miliseconds
-
-******* Results *********
-Packages: 350
-Initial price: 3290.529999999996
-Mean price: 2916.944999999986
-Mean time: 12385 miliseconds
-
-******* Results *********
-Packages: 400
-Initial price: 3806.135000000015
-Mean price: 3440.395000000017
-Mean time: 15095 miliseconds
-
-******* Results *********
-Packages: 450
-Initial price: 4373.744999999993
-Mean price: 3874.814999999996
-Mean time: 31055 miliseconds
-
-******* Results *********
-Packages: 500
-Initial price: 4828.990000000008
-Mean price: 4242.930000000016
-Mean time: 49327 miliseconds
-
-******* Results *********
-Packages: 550
-Initial price: 5312.845000000013
-Mean price: 4935.660000000018
-Mean time: 64334 miliseconds
+Initial price: 2918.1490000000005
+Mean price: 2633.814
+Mean time: 10974 miliseconds

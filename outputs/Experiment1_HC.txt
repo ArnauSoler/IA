@@ -7,18 +7,264 @@
 Initial price: 796,6400
 Initial happiness: 0
 
-******* Results *********
-Operator: Move
-Mean Price: 794.8999999999995
-Mean time: 68 miliseconds
 
+Operator: Move
 ******* Results *********
+Mean Price: 794.8999999999995
+Mean time: 26 miliseconds
+
+
 Operator: Swap
-Mean Price: 794.7849999999995
+******* Results *********
+Mean Price: 794.7849999999996
+Mean time: 20 miliseconds
+
+
+Operator: Move & Swap
+******* Results *********
+Mean Price: 794.2849999999997
+Mean time: 35 miliseconds
+
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 2345
+- Proportion: 1.2, seed: 2345
+······································
+
+Initial price: 932,5200
+Initial happiness: 0
+
+
+Operator: Move
+******* Results *********
+Mean Price: 932.5200000000002
+Mean time: 0 miliseconds
+
+
+Operator: Swap
+******* Results *********
+Mean Price: 929.4249999999998
+Mean time: 22 miliseconds
+
+
+Operator: Move & Swap
+******* Results *********
+Mean Price: 929.4249999999998
+Mean time: 35 miliseconds
+
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 3456
+- Proportion: 1.2, seed: 3456
+······································
+
+Initial price: 864,4900
+Initial happiness: 0
+
+
+Operator: Move
+******* Results *********
+Mean Price: 860.2099999999998
+Mean time: 11 miliseconds
+
+
+Operator: Swap
+******* Results *********
+Mean Price: 862.5399999999997
+Mean time: 19 miliseconds
+
+
+Operator: Move & Swap
+******* Results *********
+Mean Price: 862.3399999999995
+Mean time: 32 miliseconds
+
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 4567
+- Proportion: 1.2, seed: 4567
+······································
+
+Initial price: 892,2700
+Initial happiness: 0
+
+
+Operator: Move
+******* Results *********
+Mean Price: 886.0199999999998
+Mean time: 12 miliseconds
+
+
+Operator: Swap
+******* Results *********
+Mean Price: 889.9150000000002
+Mean time: 20 miliseconds
+
+
+Operator: Move & Swap
+******* Results *********
+Mean Price: 884.6400000000001
+Mean time: 70 miliseconds
+
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 5678
+- Proportion: 1.2, seed: 5678
+······································
+
+Initial price: 1065,6000
+Initial happiness: 0
+
+
+Operator: Move
+******* Results *********
+Mean Price: 1051.5299999999995
+Mean time: 19 miliseconds
+
+
+Operator: Swap
+******* Results *********
+Mean Price: 1063.0049999999994
+Mean time: 21 miliseconds
+
+
+Operator: Move & Swap
+******* Results *********
+Mean Price: 1050.7449999999994
 Mean time: 58 miliseconds
 
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 6789
+- Proportion: 1.2, seed: 6789
+······································
+
+Initial price: 865,4300
+Initial happiness: 0
+
+
+Operator: Move
 ******* Results *********
+Mean Price: 860.6299999999999
+Mean time: 15 miliseconds
+
+
+Operator: Swap
+******* Results *********
+Mean Price: 863.3399999999999
+Mean time: 13 miliseconds
+
+
 Operator: Move & Swap
-Mean Price: 794.2849999999996
-Mean time: 68 miliseconds
+******* Results *********
+Mean Price: 860.49
+Mean time: 51 miliseconds
+
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 7890
+- Proportion: 1.2, seed: 7890
+······································
+
+Initial price: 982,6250
+Initial happiness: 0
+
+
+Operator: Move
+******* Results *********
+Mean Price: 982.6249999999998
+Mean time: 0 miliseconds
+
+
+Operator: Swap
+******* Results *********
+Mean Price: 981.885
+Mean time: 12 miliseconds
+
+
+Operator: Move & Swap
+******* Results *********
+Mean Price: 981.885
+Mean time: 20 miliseconds
+
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 8901
+- Proportion: 1.2, seed: 8901
+······································
+
+Initial price: 917,7650
+Initial happiness: 0
+
+
+Operator: Move
+******* Results *********
+Mean Price: 917.0899999999999
+Mean time: 3 miliseconds
+
+
+Operator: Swap
+******* Results *********
+Mean Price: 915.95
+Mean time: 12 miliseconds
+
+
+Operator: Move & Swap
+******* Results *********
+Mean Price: 915.5249999999999
+Mean time: 26 miliseconds
+
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 9012
+- Proportion: 1.2, seed: 9012
+······································
+
+Initial price: 1100,5700
+Initial happiness: 0
+
+
+Operator: Move
+******* Results *********
+Mean Price: 1100.49
+Mean time: 2 miliseconds
+
+
+Operator: Swap
+******* Results *********
+Mean Price: 1099.3500000000001
+Mean time: 14 miliseconds
+
+
+Operator: Move & Swap
+******* Results *********
+Mean Price: 1098.8700000000003
+Mean time: 34 miliseconds
+
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 123
+- Proportion: 1.2, seed: 123
+······································
+
+Initial price: 969,7750
+Initial happiness: 0
+
+
+Operator: Move
+******* Results *********
+Mean Price: 969.7749999999999
+Mean time: 1 miliseconds
+
+
+Operator: Swap
+******* Results *********
+Mean Price: 968.0000000000002
+Mean time: 21 miliseconds
+
+
+Operator: Move & Swap
+******* Results *********
+Mean Price: 967.5250000000002
+Mean time: 41 miliseconds
 

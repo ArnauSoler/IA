@@ -1,0 +1,24 @@
+
+······································
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 1234, 2345, 3456, 4567, 5678, 6789, 7890, 8901, 9012, 123, 
+- Proportion: 1.2, seed: 1234, 2345, 3456, 4567, 5678, 6789, 7890, 8901, 9012, 123, 
+······································
+
+Initial States: A
+******* Results *********
+Mean Price: 934.573
+Mean time: 42 miliseconds
+
+
+Initial States: B
+******* Results *********
+Mean Price: 951.7729999999999
+Mean time: 161 miliseconds
+
+
+Initial States: C
+******* Results *********
+Mean Price: 919.0425000000001
+Mean time: 139 miliseconds
+
