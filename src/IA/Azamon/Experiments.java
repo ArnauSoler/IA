@@ -362,7 +362,7 @@ public class Experiments {
 		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
 		
 		for(int j = 1; j <= 5; ++j){
-			for(int w = 1; w <= 5; ++w){
+			for(int w = 0; w < 5; ++w){
 				for(int k = 1; k <= 5; ++k){
 					for(int l = 1; l <= 5; ++l){
 						double meanPrice = 0;
@@ -370,7 +370,7 @@ public class Experiments {
 						long meanTime = 0;
 						
 						int steps = 1000;
-						int stiter = 1;
+						int stiters[] = {1, 2, 5, 10, 20};
 						double lamb = Math.pow(0.5, l);
 						
 						for (int i = 0; i < 10; ++i) {
@@ -380,7 +380,7 @@ public class Experiments {
 							HeuristicFunction f_heuristic = new AzamonHeuristicCost();
 							
 							Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(3), new AzamonGoalTest(), f_heuristic);
-							SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps * j, stiter * j * w, k, lamb);
+							SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps * j, stiters[w], k, lamb);
 						
 							try {
 								long time = System.nanoTime();
@@ -394,7 +394,7 @@ public class Experiments {
 								e.printStackTrace();
 							}		
 						}
-						buffer_functions(steps * j + " \t" + stiter * j * w + " \t" + k + " \t" + numberFormat.format(lamb), "write");
+						buffer_functions(steps * j + " \t" + stiters[w] + " \t" + k + " \t" + numberFormat.format(lamb), "write");
 						buffer_functions("\t" + numberFormat.format(meanPrice / 10), "write");
 						buffer_functions("\t" + Math.round(meanTime/1000000) + "\n", "write");
 						
