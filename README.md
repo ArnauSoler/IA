@@ -19,7 +19,7 @@
 
 ## Problem Description
 
-We are facing a problem raised by the fictitious company Azamon.  Azamon, like Amazon, is aproduct distribution company that has to deal with daily package distributions working side byside with transport companies, the ones who are responsible for making shipments to customers.This  company  needs  a  logistics  optimization  system  for  its  shipments  in  order  to  be  efficient,minimizing its storage needs and shipping costs.
+We are facing a problem raised by the fictitious company Azamon.  Azamon, like Amazon, is a product distribution company that has to deal with daily package distributions working side byside with transport companies, the ones who are responsible for making shipments to customers.This  company  needs  a  logistics  optimization  system  for  its  shipments  in  order  to  be  efficient,minimizing its storage needs and shipping costs.
 
 What is the secret of the success of these companies?  The satisfaction of the customers sincethey have the security that all their orders will be received in the estimated time and sometimesearlier than expected, which increases their happiness.
 
