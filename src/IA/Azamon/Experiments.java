@@ -361,19 +361,21 @@ public class Experiments {
 		buffer_functions("Steps\tStiter\tK\tLamb\tprice\ttime\n", "write");
 		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
 		
-		for(int j = 1; j <= 5; ++j){
-			for(int w = 0; w < 5; ++w){
-				for(int k = 1; k <= 5; ++k){
+		for(int j = 1; j <= 10; ++j){
+			System.out.print(j + " ");
+			for(int w = 0; w < 10; ++w){
+				for(int k = 1; k <= 10; ++k){
 					for(int l = 1; l <= 5; ++l){
 						double meanPrice = 0;
 						double price = 0;
 						long meanTime = 0;
 						
 						int steps = 1000;
-						int stiters[] = {1, 2, 5, 10, 20};
+						int stiters[] = {1, 2, 5, 10, 20, 50, 100, 200, 500, 1000};
 						double lamb = Math.pow(0.5, l);
 						
-						for (int i = 0; i < 10; ++i) {
+						int iterations = 10;
+						for (int i = 0; i < iterations; ++i) {
 							AzamonState azamonState = new AzamonState(numPaq, seeds[i], proportion, seeds[i]);
 							azamonState.generateInitialStateC();
 							
@@ -395,8 +397,8 @@ public class Experiments {
 							}		
 						}
 						buffer_functions(steps * j + " \t" + stiters[w] + " \t" + k + " \t" + numberFormat.format(lamb), "write");
-						buffer_functions("\t" + numberFormat.format(meanPrice / 10), "write");
-						buffer_functions("\t" + Math.round(meanTime/1000000) + "\n", "write");
+						buffer_functions("\t" + numberFormat.format(meanPrice / iterations), "write");
+						buffer_functions("\t" + ((float) Math.round(meanTime/1000000))/iterations + "\n", "write");
 						
 						// System.out.print("Steps: " + steps * j + " \t|\tStiter: " + stiter * j * w + " \t|\tK: " + k + " \t|\tLamb: " + numberFormat.format(lamb) + "\n");
 						// System.out.print("\t|\tMean price: " + numberFormat.format(meanPrice / 10));
