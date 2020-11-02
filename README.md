@@ -15,7 +15,7 @@
 3. [Usage](#Usage)
    1. [Project files](#Project-files)
    2. [Execution steps](#Execution-steps)
-4. [LCENSE](#LICENSE)
+4. [LICENSE](#LICENSE)
 
 ## Problem Description
 
