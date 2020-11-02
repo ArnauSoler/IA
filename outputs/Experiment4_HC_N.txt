@@ -1,0 +1,60 @@
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seeds: 1234, 2345, 3456, 4567, 5678, 6789, 7890, 8901, 9012, 123, 
+- Proportion: 1.2, seeds: 1234, 2345, 3456, 4567, 5678, 6789, 7890, 8901, 9012, 123, 
+······································
+
+
+******* Results *********
+Packages: 100
+Initial price: 965.9834999999999
+Mean price: 919.0425000000002
+Mean time: 138 miliseconds
+
+******* Results *********
+Packages: 150
+Initial price: 1495.0280000000005
+Mean price: 1381.6075000000005
+Mean time: 951 miliseconds
+
+******* Results *********
+Packages: 200
+Initial price: 1979.6355000000008
+Mean price: 1831.2100000000003
+Mean time: 2396 miliseconds
+
+******* Results *********
+Packages: 250
+Initial price: 2468.1350000000007
+Mean price: 2229.0420000000004
+Mean time: 6763 miliseconds
+
+******* Results *********
+Packages: 300
+Initial price: 2918.1490000000003
+Mean price: 2633.814
+Mean time: 10975 miliseconds
+
+******* Results *********
+Packages: 350
+Initial price: 3460.8589999999995
+Mean price: 3099.4524999999994
+Mean time: 24024 miliseconds
+
+******* Results *********
+Packages: 400
+Initial price: 3961.434500000004
+Mean price: 3565.1885000000048
+Mean time: 35197 miliseconds
+
+******* Results *********
+Packages: 450
+Initial price: 4460.401500000001
+Mean price: 3970.5145
+Mean time: 59554 miliseconds
+
+******* Results *********
+Packages: 500
+Initial price: 4973.148000000003
+Mean price: 4437.349000000006
+Mean time: 87035 miliseconds
