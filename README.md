@@ -12,10 +12,10 @@
 
 1. [Description](#Description)
 2. [Main Goal](#Main-Goal)
-2. [Usage](#Usage)
+3. [Usage](#Usage)
    1. [Project files](#Project-files)
    2. [Execution steps](#Execution-steps)
-3. [License](#License)
+4. [License](#License)
 
 ## Problem Description
 
@@ -37,7 +37,7 @@ To solve it, we will start from an initial solution that we will try to improve 
 
 ### Execution steps
 
-#### - CREATE JAR FILE:
+#### - Create the .jar file:
 
 	·····················································
 	1. Generate the class files:
@@ -50,7 +50,7 @@ To solve it, we will start from an initial solution that we will try to improve 
 	$ jar cvfm Azamon.jar Manifest.txt IA/Azamon/*.class
 
 
-#### - EXECUTE THE JAR FILE:
+#### - Execute the .jar file:
 
 	$ java -jar Azamon.jar
 
