@@ -10,7 +10,7 @@
 
 ## Table of Contents
 
-1. [Description](#Description)
+1. [Problem Description](#Problem-Description)
 2. [Main Goal](#Main-Goal)
 3. [Usage](#Usage)
    1. [Project files](#Project-files)
@@ -107,3 +107,5 @@ To solve it, we will start from an initial solution that we will try to improve 
 			- Experiment Number 7.2
 			- Experiment Number 7.4
 			- Experiment Number 7.6 
+## LICENCE
+MIT © Dànae/Miquel/Arnau
