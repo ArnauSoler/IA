@@ -347,12 +347,10 @@ public class Experiments {
 
 	private static void experiment3(){
 		
-		Output("Experiment3_SA_F.txt");
+		Output("Experiment3_SA_Final.txt");
 		
 		int numPaq = 100;
-		int seedPaquetes = 1234;
 		double proportion = 1.2;
-		int seedOfertas = 1234;
 		
 		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
 		buffer_functions("- # Packages: " + numPaq + ", seeds: " + getSeeds() + "\n", "write");
@@ -361,20 +359,18 @@ public class Experiments {
 		buffer_functions("Steps\tStiter\tK\tLamb\tprice\ttime\n", "write");
 		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
 		
+		int steps = 10000;
+		int stiters[] = {1, 2, 5, 10, 20, 50, 100, 200, 500, 1000};
+		int ks[] = {1, 5, 25, 125, 500};
+		double lamb[] = {1, 0.1, 0.01, 0.001, 0.0001};
+		
 		for(int j = 1; j <= 1; ++j){
-			// System.out.print(j + " ");
-			for(int w = 0; w <= 5; ++w){
-				System.out.print(w + " ");
-				for(int k = 0; k <= 3; ++k){
-					for(int l = 0; l <= 4; ++l){
+			for(int w = 0; w < stiters.length; ++w){
+				for(int k = 0; k < ks.length; ++k){
+					for(int l = 0; l < lamb.length; ++l){
 						double meanPrice = 0;
 						double price = 0;
 						long meanTime = 0;
-						
-						int steps = 10000;
-						int stiters[] = {1, 2, 5, 10, 20, 50, 100, 200, 500, 1000};
-						int ks[] = {1, 5, 25, 125};
-						double lamb[] = {1, 0.5, 0.1, 0.05, 0.01};
 						
 						int iterations = 10;
 						for (int i = 0; i < iterations; ++i) {
@@ -398,8 +394,8 @@ public class Experiments {
 								e.printStackTrace();
 							}		
 						}
-						buffer_functions(steps * j + " \t" + stiters[w] + " \t" + ks[k] + " \t" + numberFormat.format(lamb[l]), "write");
-						buffer_functions("\t" + numberFormat.format(meanPrice / iterations), "write");
+						buffer_functions(steps * j + " \t" + stiters[w] + " \t" + ks[k] + " \t" + lamb[l], "write");
+						buffer_functions("\t" + meanPrice / iterations, "write");
 						buffer_functions("\t" + ((float) Math.round(meanTime/1000000))/iterations + "\n", "write");
 						
 						// System.out.print("Steps: " + steps * j + " \t|\tStiter: " + stiter * j * w + " \t|\tK: " + k + " \t|\tLamb: " + numberFormat.format(lamb) + "\n");
@@ -414,22 +410,21 @@ public class Experiments {
 
 	private static void experiment4(){
 		
-		Output("Experiment4_HC.txt");
+		Output("Experiment4_HC_P.txt");
 		
 		int numPaq = 100;
-		int seedPaquetes = 1234;
 		double proportion = 1.2;
-		int seedOfertas = 1234;
 		
 		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
 		buffer_functions("- # Packages: " + numPaq + ", seeds: " + getSeeds() + "\n", "write");
 		buffer_functions("- Proportion: " + proportion + ", seeds: " + getSeeds() + "\n", "write");
 		buffer_functions("······································\n" +"\n", "write");
 		
-		for(int j = 0; j < 10; ++j){
+		for(int j = 0; j < 20; ++j){
 			double meanInitialPrice = 0;
 			double meanPrice = 0;
 			long meanTime = 0;
+			int iterations = 10;
 
 			for (int i = 0; i < seeds.length; ++i) {
 				AzamonState azamonState = new AzamonState(numPaq, seeds[i], proportion + 0.2*j, seeds[i]);
@@ -443,7 +438,7 @@ public class Experiments {
 				HillClimbingSearch hillClimbingSearch = new HillClimbingSearch();
 			
 				double price = 0;
-
+				
 				try {
 					long time = System.nanoTime();
 					SearchAgent searchAgent = new SearchAgent(problem, hillClimbingSearch);
@@ -464,8 +459,16 @@ public class Experiments {
 			buffer_functions("Mean price: " + meanPrice/seeds.length + "\n", "write");
 			buffer_functions("Mean time: " + Math.round(meanTime/1000000)/seeds.length + " miliseconds\n", "write");
 		}
+		buffer_functions(null, "close");
 
-		for(int j = 0; j < 5; ++j){
+		Output("Experiment4_HC_N.txt");
+		
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seeds: " + getSeeds() + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seeds: " + getSeeds() + "\n", "write");
+		buffer_functions("······································\n" +"\n", "write");
+		
+		for(int j = 0; j < 9; ++j){
 			double meanInitialPrice = 0;
 			double meanPrice = 0;
 			long meanTime = 0;
