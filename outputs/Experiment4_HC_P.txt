@@ -4,123 +4,23 @@
 - Proportion: 1.2, seeds: 1234, 2345, 3456, 4567, 5678, 6789, 7890, 8901, 9012, 123, 
 ······································
 
-
-******* Results *********
-Proportion: 1.2
-Mean initial price: 965.9834999999999
-Mean price: 919.0425000000002
-Mean time: 191 miliseconds
-
-******* Results *********
-Proportion: 1.4
-Mean initial price: 959.1785
-Mean price: 899.6845
-Mean time: 186 miliseconds
-
-******* Results *********
-Proportion: 1.6
-Mean initial price: 951.7139999999999
-Mean price: 889.052
-Mean time: 202 miliseconds
-
-******* Results *********
-Proportion: 1.8
-Mean initial price: 939.3459999999999
-Mean price: 885.1560000000002
-Mean time: 204 miliseconds
-
-******* Results *********
-Proportion: 2.0
-Mean initial price: 943.1590000000002
-Mean price: 859.4100000000001
-Mean time: 274 miliseconds
-
-******* Results *********
-Proportion: 2.2
-Mean initial price: 943.4314999999999
-Mean price: 844.9089999999999
-Mean time: 319 miliseconds
-
-******* Results *********
-Proportion: 2.4000000000000004
-Mean initial price: 941.7365000000002
-Mean price: 828.2114999999998
-Mean time: 352 miliseconds
-
-******* Results *********
-Proportion: 2.6
-Mean initial price: 942.691
-Mean price: 829.0649999999999
-Mean time: 390 miliseconds
-
-******* Results *********
-Proportion: 2.8
-Mean initial price: 944.7105000000001
-Mean price: 815.5134999999999
-Mean time: 417 miliseconds
-
-******* Results *********
-Proportion: 3.0
-Mean initial price: 944.5904999999999
-Mean price: 813.2205
-Mean time: 451 miliseconds
-
-******* Results *********
-Proportion: 3.2
-Mean initial price: 944.314
-Mean price: 812.376
-Mean time: 464 miliseconds
-
-******* Results *********
-Proportion: 3.4000000000000004
-Mean initial price: 941.5939999999998
-Mean price: 812.787
-Mean time: 478 miliseconds
-
-******* Results *********
-Proportion: 3.6000000000000005
-Mean initial price: 942.0075
-Mean price: 805.9515000000001
-Mean time: 586 miliseconds
-
-******* Results *********
-Proportion: 3.8
-Mean initial price: 940.3155000000004
-Mean price: 802.4095000000004
-Mean time: 561 miliseconds
-
-******* Results *********
-Proportion: 4.0
-Mean initial price: 939.4550000000002
-Mean price: 794.969
-Mean time: 631 miliseconds
-
-******* Results *********
-Proportion: 4.2
-Mean initial price: 936.5
-Mean price: 790.7234999999998
-Mean time: 662 miliseconds
-
-******* Results *********
-Proportion: 4.4
-Mean initial price: 939.3114999999998
-Mean price: 786.9139999999999
-Mean time: 693 miliseconds
-
-******* Results *********
-Proportion: 4.6000000000000005
-Mean initial price: 945.9825000000001
-Mean price: 785.5995000000003
-Mean time: 743 miliseconds
-
-******* Results *********
-Proportion: 4.8
-Mean initial price: 945.1469999999999
-Mean price: 784.3205
-Mean time: 729 miliseconds
-
-******* Results *********
-Proportion: 5.0
-Mean initial price: 949.4864999999998
-Mean price: 782.3199999999999
-Mean time: 791 miliseconds
+Proportion	Initial	Price	Time1.2	965.9834999999999	919.0425000000002	262 
+1.4	959.1785	899.6845	307 
+1.6	951.7139999999999	889.052	297 
+1.8	939.3459999999999	885.1560000000002	321 
+2.0	943.1590000000002	859.4100000000001	426 
+2.2	943.4314999999999	844.9089999999999	455 
+2.4000000000000004	941.7365000000002	828.2114999999998	481 
+2.6	942.691	829.0649999999999	554 
+2.8	944.7105000000001	815.5134999999999	583 
+3.0	944.5904999999999	813.2205	617 
+3.2	944.314	812.376	653 
+3.4000000000000004	941.5939999999998	812.787	679 
+3.6000000000000005	942.0075	805.9515000000001	771 
+3.8	940.3155000000004	802.4095000000004	793 
+4.0	939.4550000000002	794.969	869 
+4.2	936.5	790.7234999999998	919 
+4.4	939.3114999999998	786.9139999999999	1023 
+4.6000000000000005	945.9825000000001	785.5995000000003	1045 
+4.8	945.1469999999999	784.3205	1117 
+5.0	949.4864999999998	782.3199999999999	1083 
