@@ -16,21 +16,21 @@ Operator: Move
 ******* Results *********
 Mean Price: 796.6399999999995
 Mean happiness: 0.0
-Mean time: 54 miliseconds
+Mean time: 125 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 796.6399999999995
+Mean Price: 795.0049999999997
 Mean happiness: 0.0
-Mean time: 62 miliseconds
+Mean time: 145 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 796.015
+Mean Price: 796.2149999999997
 Mean happiness: 0.0
-Mean time: 76 miliseconds
+Mean time: 130 miliseconds
 
 ----------------------
 Epsilon happiness: 1
@@ -39,23 +39,23 @@ Epsilon happiness: 1
 Operator: Move
 
 ******* Results *********
-Mean Price: 796.6399999999995
-Mean happiness: 0.0
-Mean time: 12 miliseconds
+Mean Price: 813.4699999999998
+Mean happiness: 20.0
+Mean time: 45 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 796.6399999999995
-Mean happiness: 0.0
-Mean time: 21 miliseconds
+Mean Price: 807.7999999999998
+Mean happiness: 16.0
+Mean time: 52 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 812.2249999999996
-Mean happiness: 22.0
-Mean time: 29 miliseconds
+Mean Price: 810.3099999999997
+Mean happiness: 18.0
+Mean time: 86 miliseconds
 
 ----------------------
 Epsilon happiness: 2
@@ -64,23 +64,23 @@ Epsilon happiness: 2
 Operator: Move
 
 ******* Results *********
-Mean Price: 844.8599999999997
-Mean happiness: 40.0
-Mean time: 12 miliseconds
+Mean Price: 853.1200000000003
+Mean happiness: 43.0
+Mean time: 22 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 862.5949999999995
-Mean happiness: 47.0
-Mean time: 21 miliseconds
+Mean Price: 853.7899999999996
+Mean happiness: 44.0
+Mean time: 57 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 854.8200000000003
+Mean Price: 855.7549999999994
 Mean happiness: 45.0
-Mean time: 21 miliseconds
+Mean time: 67 miliseconds
 
 ----------------------
 Epsilon happiness: 3
@@ -89,23 +89,23 @@ Epsilon happiness: 3
 Operator: Move
 
 ******* Results *********
-Mean Price: 888.8649999999994
-Mean happiness: 58.0
-Mean time: 9 miliseconds
+Mean Price: 902.0349999999995
+Mean happiness: 62.0
+Mean time: 24 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 906.3649999999999
-Mean happiness: 63.0
-Mean time: 16 miliseconds
+Mean Price: 889.925
+Mean happiness: 58.0
+Mean time: 60 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 907.8399999999987
-Mean happiness: 63.0
-Mean time: 29 miliseconds
+Mean Price: 914.1649999999998
+Mean happiness: 66.0
+Mean time: 55 miliseconds
 
 ----------------------
 Epsilon happiness: 4
@@ -114,23 +114,23 @@ Epsilon happiness: 4
 Operator: Move
 
 ******* Results *********
-Mean Price: 965.1800000000001
-Mean happiness: 77.0
-Mean time: 10 miliseconds
+Mean Price: 940.9949999999995
+Mean happiness: 73.0
+Mean time: 21 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 960.3849999999989
-Mean happiness: 79.0
-Mean time: 15 miliseconds
+Mean Price: 956.5499999999995
+Mean happiness: 77.0
+Mean time: 39 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 952.8249999999994
-Mean happiness: 76.0
-Mean time: 33 miliseconds
+Mean Price: 960.4899999999997
+Mean happiness: 78.0
+Mean time: 81 miliseconds
 
 ----------------------
 Epsilon happiness: 5
@@ -139,23 +139,23 @@ Epsilon happiness: 5
 Operator: Move
 
 ******* Results *********
-Mean Price: 1017.7299999999994
-Mean happiness: 91.0
-Mean time: 6 miliseconds
+Mean Price: 1015.7849999999996
+Mean happiness: 90.0
+Mean time: 18 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 1002.9150000000001
-Mean happiness: 87.0
-Mean time: 16 miliseconds
+Mean Price: 1019.6999999999996
+Mean happiness: 91.0
+Mean time: 56 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 988.5799999999995
-Mean happiness: 85.0
-Mean time: 16 miliseconds
+Mean Price: 1001.3149999999994
+Mean happiness: 87.0
+Mean time: 72 miliseconds
 
 ----------------------
 Epsilon happiness: 6
@@ -164,23 +164,23 @@ Epsilon happiness: 6
 Operator: Move
 
 ******* Results *********
-Mean Price: 1026.7999999999995
-Mean happiness: 91.0
-Mean time: 4 miliseconds
+Mean Price: 1054.9750000000004
+Mean happiness: 97.0
+Mean time: 21 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 1037.6399999999994
-Mean happiness: 93.0
-Mean time: 10 miliseconds
+Mean Price: 1040.895
+Mean happiness: 94.0
+Mean time: 39 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 1050.7350000000004
-Mean happiness: 95.0
-Mean time: 22 miliseconds
+Mean Price: 1041.8149999999998
+Mean happiness: 93.0
+Mean time: 61 miliseconds
 
 ----------------------
 Epsilon happiness: 7
@@ -189,23 +189,23 @@ Epsilon happiness: 7
 Operator: Move
 
 ******* Results *********
-Mean Price: 1081.9349999999993
-Mean happiness: 99.0
-Mean time: 5 miliseconds
+Mean Price: 1106.2499999999986
+Mean happiness: 104.0
+Mean time: 40 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 1080.5399999999995
-Mean happiness: 100.0
-Mean time: 10 miliseconds
+Mean Price: 1095.6699999999998
+Mean happiness: 102.0
+Mean time: 83 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 1079.8999999999996
-Mean happiness: 99.0
-Mean time: 35 miliseconds
+Mean Price: 1089.0349999999996
+Mean happiness: 100.0
+Mean time: 140 miliseconds
 
 ----------------------
 Epsilon happiness: 8
@@ -214,23 +214,23 @@ Epsilon happiness: 8
 Operator: Move
 
 ******* Results *********
-Mean Price: 1126.5049999999987
-Mean happiness: 105.0
-Mean time: 8 miliseconds
+Mean Price: 1165.5000000000002
+Mean happiness: 110.0
+Mean time: 28 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 1134.8399999999997
-Mean happiness: 106.0
-Mean time: 9 miliseconds
+Mean Price: 1146.5549999999992
+Mean happiness: 108.0
+Mean time: 49 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 1130.2800000000002
+Mean Price: 1137.3999999999994
 Mean happiness: 107.0
-Mean time: 16 miliseconds
+Mean time: 59 miliseconds
 
 ----------------------
 Epsilon happiness: 9
@@ -239,23 +239,23 @@ Epsilon happiness: 9
 Operator: Move
 
 ******* Results *********
-Mean Price: 1171.5599999999986
-Mean happiness: 110.0
-Mean time: 8 miliseconds
+Mean Price: 1154.469999999999
+Mean happiness: 109.0
+Mean time: 22 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 1185.3849999999995
-Mean happiness: 113.0
-Mean time: 9 miliseconds
+Mean Price: 1167.5849999999987
+Mean happiness: 110.0
+Mean time: 36 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 1186.3449999999987
-Mean happiness: 112.0
-Mean time: 13 miliseconds
+Mean Price: 1164.5749999999996
+Mean happiness: 110.0
+Mean time: 49 miliseconds
 
 ----------------------
 Epsilon happiness: 10
@@ -264,23 +264,23 @@ Epsilon happiness: 10
 Operator: Move
 
 ******* Results *********
-Mean Price: 1223.8199999999988
-Mean happiness: 116.0
-Mean time: 5 miliseconds
+Mean Price: 1214.4999999999989
+Mean happiness: 115.0
+Mean time: 15 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 1217.029999999999
+Mean Price: 1222.5749999999991
 Mean happiness: 116.0
-Mean time: 9 miliseconds
+Mean time: 31 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 1253.959999999997
-Mean happiness: 120.0
-Mean time: 20 miliseconds
+Mean Price: 1223.05
+Mean happiness: 116.0
+Mean time: 53 miliseconds
 
 ----------------------
 Epsilon happiness: 11
@@ -289,23 +289,23 @@ Epsilon happiness: 11
 Operator: Move
 
 ******* Results *********
-Mean Price: 1262.874999999999
-Mean happiness: 120.0
-Mean time: 5 miliseconds
+Mean Price: 1278.8300000000002
+Mean happiness: 121.0
+Mean time: 18 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 1300.9349999999984
-Mean happiness: 123.0
-Mean time: 9 miliseconds
+Mean Price: 1274.584999999999
+Mean happiness: 121.0
+Mean time: 34 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 1267.1099999999997
+Mean Price: 1274.774999999999
 Mean happiness: 121.0
-Mean time: 13 miliseconds
+Mean time: 43 miliseconds
 
 ----------------------
 Epsilon happiness: 12
@@ -314,23 +314,23 @@ Epsilon happiness: 12
 Operator: Move
 
 ******* Results *********
-Mean Price: 1319.2899999999997
+Mean Price: 1326.6299999999983
 Mean happiness: 125.0
-Mean time: 10 miliseconds
+Mean time: 15 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 1247.0249999999994
-Mean happiness: 118.0
-Mean time: 9 miliseconds
+Mean Price: 1342.7549999999987
+Mean happiness: 127.0
+Mean time: 65 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 1327.4999999999982
-Mean happiness: 126.0
-Mean time: 14 miliseconds
+Mean Price: 1349.3949999999998
+Mean happiness: 127.0
+Mean time: 91 miliseconds
 
 ----------------------
 Epsilon happiness: 13
@@ -339,23 +339,23 @@ Epsilon happiness: 13
 Operator: Move
 
 ******* Results *********
-Mean Price: 1331.4099999999992
-Mean happiness: 126.0
-Mean time: 5 miliseconds
+Mean Price: 1280.3849999999989
+Mean happiness: 120.0
+Mean time: 43 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 1317.82
-Mean happiness: 125.0
-Mean time: 8 miliseconds
+Mean Price: 1310.2749999999976
+Mean happiness: 124.0
+Mean time: 61 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 1333.3399999999976
+Mean Price: 1334.1549999999986
 Mean happiness: 126.0
-Mean time: 37 miliseconds
+Mean time: 59 miliseconds
 
 ----------------------
 Epsilon happiness: 14
@@ -364,20 +364,3467 @@ Epsilon happiness: 14
 Operator: Move
 
 ******* Results *********
-Mean Price: 1345.654999999999
-Mean happiness: 127.0
-Mean time: 13 miliseconds
+Mean Price: 1321.2199999999993
+Mean happiness: 125.0
+Mean time: 15 miliseconds
 
 Operator: Swap
 
 ******* Results *********
-Mean Price: 1356.5749999999987
+Mean Price: 1359.6649999999995
 Mean happiness: 128.0
-Mean time: 24 miliseconds
+Mean time: 38 miliseconds
 
 Operator: Move & Swap
 
 ******* Results *********
-Mean Price: 1364.8049999999998
-Mean happiness: 128.0
+Mean Price: 1375.934999999999
+Mean happiness: 129.0
+Mean time: 41 miliseconds
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 2345
+- Proportion: 1.2, seed: 2345
+······································
+
+Initial price: 932,5200
+Initial happiness: 0
+
+----------------------
+Epsilon happiness: 0
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 932.52
+Mean happiness: 0.0
+Mean time: 32 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 930.6749999999992
+Mean happiness: 0.0
+Mean time: 63 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 928.8049999999996
+Mean happiness: 0.0
+Mean time: 97 miliseconds
+
+----------------------
+Epsilon happiness: 1
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 936.2750000000003
+Mean happiness: 12.0
+Mean time: 39 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 939.0050000000002
+Mean happiness: 13.0
+Mean time: 60 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 938.8900000000001
+Mean happiness: 15.0
+Mean time: 89 miliseconds
+
+----------------------
+Epsilon happiness: 2
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 952.3849999999995
+Mean happiness: 20.0
+Mean time: 25 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 956.8850000000002
+Mean happiness: 24.0
+Mean time: 52 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 958.075
+Mean happiness: 24.0
+Mean time: 87 miliseconds
+
+----------------------
+Epsilon happiness: 3
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 970.2600000000002
+Mean happiness: 29.0
 Mean time: 26 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 965.8599999999998
+Mean happiness: 27.0
+Mean time: 56 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 964.3849999999999
+Mean happiness: 27.0
+Mean time: 70 miliseconds
+
+----------------------
+Epsilon happiness: 4
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1020.0099999999998
+Mean happiness: 41.0
+Mean time: 26 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1000.0500000000001
+Mean happiness: 37.0
+Mean time: 53 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1005.5400000000001
+Mean happiness: 37.0
+Mean time: 69 miliseconds
+
+----------------------
+Epsilon happiness: 5
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1035.8400000000001
+Mean happiness: 43.0
+Mean time: 26 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1032.8599999999994
+Mean happiness: 43.0
+Mean time: 48 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1058.9149999999988
+Mean happiness: 49.0
+Mean time: 70 miliseconds
+
+----------------------
+Epsilon happiness: 6
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1115.1200000000006
+Mean happiness: 57.0
+Mean time: 26 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1116.025
+Mean happiness: 58.0
+Mean time: 45 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1118.6799999999992
+Mean happiness: 58.0
+Mean time: 79 miliseconds
+
+----------------------
+Epsilon happiness: 7
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1141.775
+Mean happiness: 61.0
+Mean time: 25 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1151.69
+Mean happiness: 62.0
+Mean time: 43 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1136.6249999999995
+Mean happiness: 60.0
+Mean time: 68 miliseconds
+
+----------------------
+Epsilon happiness: 8
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1172.3000000000002
+Mean happiness: 65.0
+Mean time: 22 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1189.1300000000006
+Mean happiness: 67.0
+Mean time: 41 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1196.2949999999996
+Mean happiness: 68.0
+Mean time: 53 miliseconds
+
+----------------------
+Epsilon happiness: 9
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1301.1249999999984
+Mean happiness: 80.0
+Mean time: 22 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1280.9700000000005
+Mean happiness: 77.0
+Mean time: 35 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1300.4049999999995
+Mean happiness: 79.0
+Mean time: 53 miliseconds
+
+----------------------
+Epsilon happiness: 10
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1337.8549999999998
+Mean happiness: 83.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1342.4449999999993
+Mean happiness: 84.0
+Mean time: 34 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1349.8800000000006
+Mean happiness: 85.0
+Mean time: 53 miliseconds
+
+----------------------
+Epsilon happiness: 11
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1365.1650000000025
+Mean happiness: 86.0
+Mean time: 18 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1383.89
+Mean happiness: 89.0
+Mean time: 33 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1387.3599999999994
+Mean happiness: 88.0
+Mean time: 54 miliseconds
+
+----------------------
+Epsilon happiness: 12
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1397.4550000000006
+Mean happiness: 89.0
+Mean time: 17 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1436.78
+Mean happiness: 92.0
+Mean time: 34 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1433.340000000001
+Mean happiness: 92.0
+Mean time: 44 miliseconds
+
+----------------------
+Epsilon happiness: 13
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1452.695
+Mean happiness: 94.0
+Mean time: 17 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1455.7500000000002
+Mean happiness: 94.0
+Mean time: 31 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1467.9550000000002
+Mean happiness: 95.0
+Mean time: 55 miliseconds
+
+----------------------
+Epsilon happiness: 14
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1536.1999999999996
+Mean happiness: 100.0
+Mean time: 17 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1522.4799999999998
+Mean happiness: 99.0
+Mean time: 32 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1571.9400000000005
+Mean happiness: 102.0
+Mean time: 45 miliseconds
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 3456
+- Proportion: 1.2, seed: 3456
+······································
+
+Initial price: 864,4900
+Initial happiness: 0
+
+----------------------
+Epsilon happiness: 0
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 862.3950000000003
+Mean happiness: 0.0
+Mean time: 30 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 863.8099999999996
+Mean happiness: 0.0
+Mean time: 65 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 863.8450000000005
+Mean happiness: 0.0
+Mean time: 98 miliseconds
+
+----------------------
+Epsilon happiness: 1
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 870.7099999999997
+Mean happiness: 18.0
+Mean time: 40 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 875.1850000000001
+Mean happiness: 25.0
+Mean time: 67 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 870.2249999999998
+Mean happiness: 16.0
+Mean time: 79 miliseconds
+
+----------------------
+Epsilon happiness: 2
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 894.9000000000007
+Mean happiness: 39.0
+Mean time: 29 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 904.6250000000003
+Mean happiness: 43.0
+Mean time: 49 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 907.3099999999996
+Mean happiness: 45.0
+Mean time: 82 miliseconds
+
+----------------------
+Epsilon happiness: 3
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 940.9750000000001
+Mean happiness: 57.0
+Mean time: 22 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 938.0499999999995
+Mean happiness: 59.0
+Mean time: 58 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 954.6749999999998
+Mean happiness: 61.0
+Mean time: 55 miliseconds
+
+----------------------
+Epsilon happiness: 4
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1005.9749999999996
+Mean happiness: 75.0
+Mean time: 18 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1001.8900000000003
+Mean happiness: 75.0
+Mean time: 40 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1000.3900000000006
+Mean happiness: 75.0
+Mean time: 59 miliseconds
+
+----------------------
+Epsilon happiness: 5
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1070.0500000000006
+Mean happiness: 89.0
+Mean time: 16 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1066.0800000000004
+Mean happiness: 88.0
+Mean time: 33 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1066.8400000000004
+Mean happiness: 89.0
+Mean time: 60 miliseconds
+
+----------------------
+Epsilon happiness: 6
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1098.9850000000006
+Mean happiness: 95.0
+Mean time: 18 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1117.685000000001
+Mean happiness: 97.0
+Mean time: 31 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1110.1499999999999
+Mean happiness: 96.0
+Mean time: 46 miliseconds
+
+----------------------
+Epsilon happiness: 7
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1161.9950000000013
+Mean happiness: 104.0
+Mean time: 17 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1155.3750000000002
+Mean happiness: 103.0
+Mean time: 32 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1155.0900000000006
+Mean happiness: 102.0
+Mean time: 81 miliseconds
+
+----------------------
+Epsilon happiness: 8
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1191.1400000000015
+Mean happiness: 107.0
+Mean time: 25 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1189.9550000000006
+Mean happiness: 109.0
+Mean time: 33 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1128.230000000001
+Mean happiness: 96.0
+Mean time: 65 miliseconds
+
+----------------------
+Epsilon happiness: 9
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1232.5200000000002
+Mean happiness: 107.0
+Mean time: 26 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1244.1050000000018
+Mean happiness: 114.0
+Mean time: 36 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1247.4700000000018
+Mean happiness: 115.0
+Mean time: 45 miliseconds
+
+----------------------
+Epsilon happiness: 10
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1235.7750000000017
+Mean happiness: 109.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1232.1050000000005
+Mean happiness: 108.0
+Mean time: 39 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1241.825000000001
+Mean happiness: 109.0
+Mean time: 56 miliseconds
+
+----------------------
+Epsilon happiness: 11
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1277.4000000000008
+Mean happiness: 115.0
+Mean time: 24 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1262.35
+Mean happiness: 111.0
+Mean time: 46 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1290.6050000000002
+Mean happiness: 114.0
+Mean time: 53 miliseconds
+
+----------------------
+Epsilon happiness: 12
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1329.2700000000007
+Mean happiness: 118.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1301.4699999999998
+Mean happiness: 113.0
+Mean time: 68 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1333.9299999999992
+Mean happiness: 116.0
+Mean time: 52 miliseconds
+
+----------------------
+Epsilon happiness: 13
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1333.8999999999996
+Mean happiness: 117.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1350.2599999999995
+Mean happiness: 119.0
+Mean time: 37 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1359.3950000000011
+Mean happiness: 118.0
+Mean time: 49 miliseconds
+
+----------------------
+Epsilon happiness: 14
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1415.6200000000001
+Mean happiness: 121.0
+Mean time: 17 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1359.3999999999994
+Mean happiness: 120.0
+Mean time: 43 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1375.2300000000005
+Mean happiness: 120.0
+Mean time: 51 miliseconds
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 4567
+- Proportion: 1.2, seed: 4567
+······································
+
+Initial price: 892,2700
+Initial happiness: 0
+
+----------------------
+Epsilon happiness: 0
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 888.4
+Mean happiness: 0.0
+Mean time: 36 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 884.8900000000002
+Mean happiness: 0.0
+Mean time: 69 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 886.0649999999998
+Mean happiness: 0.0
+Mean time: 93 miliseconds
+
+----------------------
+Epsilon happiness: 1
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 891.7350000000001
+Mean happiness: 11.0
+Mean time: 28 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 895.7450000000002
+Mean happiness: 12.0
+Mean time: 56 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 892.0150000000002
+Mean happiness: 11.0
+Mean time: 87 miliseconds
+
+----------------------
+Epsilon happiness: 2
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 925.1900000000002
+Mean happiness: 31.0
+Mean time: 21 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 922.76
+Mean happiness: 30.0
+Mean time: 49 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 920.2600000000004
+Mean happiness: 28.0
+Mean time: 63 miliseconds
+
+----------------------
+Epsilon happiness: 3
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 985.355
+Mean happiness: 53.0
+Mean time: 18 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 972.2900000000003
+Mean happiness: 49.0
+Mean time: 42 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 965.9400000000006
+Mean happiness: 47.0
+Mean time: 59 miliseconds
+
+----------------------
+Epsilon happiness: 4
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1025.5200000000002
+Mean happiness: 65.0
+Mean time: 21 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1026.0949999999998
+Mean happiness: 65.0
+Mean time: 33 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1025.4249999999997
+Mean happiness: 65.0
+Mean time: 46 miliseconds
+
+----------------------
+Epsilon happiness: 5
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1106.2300000000007
+Mean happiness: 83.0
+Mean time: 16 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1107.9350000000002
+Mean happiness: 83.0
+Mean time: 37 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1103.8750000000005
+Mean happiness: 83.0
+Mean time: 47 miliseconds
+
+----------------------
+Epsilon happiness: 6
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1170.4550000000008
+Mean happiness: 94.0
+Mean time: 18 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1151.7450000000006
+Mean happiness: 91.0
+Mean time: 33 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1138.3450000000007
+Mean happiness: 89.0
+Mean time: 44 miliseconds
+
+----------------------
+Epsilon happiness: 7
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1215.8449999999993
+Mean happiness: 101.0
+Mean time: 18 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1215.365
+Mean happiness: 101.0
+Mean time: 29 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1225.1500000000008
+Mean happiness: 102.0
+Mean time: 48 miliseconds
+
+----------------------
+Epsilon happiness: 8
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1224.0250000000003
+Mean happiness: 102.0
+Mean time: 14 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1236.285000000001
+Mean happiness: 104.0
+Mean time: 28 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1229.2899999999997
+Mean happiness: 102.0
+Mean time: 43 miliseconds
+
+----------------------
+Epsilon happiness: 9
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1264.999999999999
+Mean happiness: 107.0
+Mean time: 14 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1265.4599999999991
+Mean happiness: 107.0
+Mean time: 27 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1220.2800000000007
+Mean happiness: 99.0
+Mean time: 85 miliseconds
+
+----------------------
+Epsilon happiness: 10
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1273.5700000000002
+Mean happiness: 106.0
+Mean time: 28 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1281.1050000000002
+Mean happiness: 101.0
+Mean time: 48 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1280.0800000000006
+Mean happiness: 100.0
+Mean time: 52 miliseconds
+
+----------------------
+Epsilon happiness: 11
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1300.450000000001
+Mean happiness: 101.0
+Mean time: 22 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1299.8950000000007
+Mean happiness: 102.0
+Mean time: 44 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1278.1950000000004
+Mean happiness: 106.0
+Mean time: 67 miliseconds
+
+----------------------
+Epsilon happiness: 12
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1277.935
+Mean happiness: 104.0
+Mean time: 23 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1346.0150000000008
+Mean happiness: 105.0
+Mean time: 37 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1324.6599999999999
+Mean happiness: 104.0
+Mean time: 66 miliseconds
+
+----------------------
+Epsilon happiness: 13
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1299.7100000000012
+Mean happiness: 107.0
+Mean time: 25 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1316.9050000000002
+Mean happiness: 108.0
+Mean time: 46 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1302.0400000000009
+Mean happiness: 108.0
+Mean time: 85 miliseconds
+
+----------------------
+Epsilon happiness: 14
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1383.2200000000005
+Mean happiness: 108.0
+Mean time: 23 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1416.1399999999994
+Mean happiness: 108.0
+Mean time: 34 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1369.619999999999
+Mean happiness: 108.0
+Mean time: 55 miliseconds
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 5678
+- Proportion: 1.2, seed: 5678
+······································
+
+Initial price: 1065,6000
+Initial happiness: 0
+
+----------------------
+Epsilon happiness: 0
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1062.5600000000006
+Mean happiness: 0.0
+Mean time: 35 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1060.345
+Mean happiness: 0.0
+Mean time: 73 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1058.3599999999988
+Mean happiness: 0.0
+Mean time: 105 miliseconds
+
+----------------------
+Epsilon happiness: 1
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1065.1999999999994
+Mean happiness: 11.0
+Mean time: 39 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1066.8100000000004
+Mean happiness: 14.0
+Mean time: 68 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1066.9850000000001
+Mean happiness: 11.0
+Mean time: 86 miliseconds
+
+----------------------
+Epsilon happiness: 2
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1076.805000000001
+Mean happiness: 19.0
+Mean time: 33 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1069.205000000001
+Mean happiness: 17.0
+Mean time: 63 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1075.950000000001
+Mean happiness: 19.0
+Mean time: 79 miliseconds
+
+----------------------
+Epsilon happiness: 3
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1099.345
+Mean happiness: 27.0
+Mean time: 24 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1102.2350000000004
+Mean happiness: 29.0
+Mean time: 45 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1105.865
+Mean happiness: 30.0
+Mean time: 77 miliseconds
+
+----------------------
+Epsilon happiness: 4
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1143.4049999999997
+Mean happiness: 40.0
+Mean time: 24 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1145.8800000000008
+Mean happiness: 40.0
+Mean time: 45 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1140.5000000000011
+Mean happiness: 39.0
+Mean time: 65 miliseconds
+
+----------------------
+Epsilon happiness: 5
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1174.2749999999994
+Mean happiness: 46.0
+Mean time: 21 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1183.955
+Mean happiness: 48.0
+Mean time: 38 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1189.1549999999993
+Mean happiness: 50.0
+Mean time: 73 miliseconds
+
+----------------------
+Epsilon happiness: 6
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1228.2849999999983
+Mean happiness: 56.0
+Mean time: 26 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1220.785
+Mean happiness: 55.0
+Mean time: 51 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1214.8049999999998
+Mean happiness: 54.0
+Mean time: 70 miliseconds
+
+----------------------
+Epsilon happiness: 7
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1278.9000000000008
+Mean happiness: 64.0
+Mean time: 21 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1289.6149999999998
+Mean happiness: 65.0
+Mean time: 35 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1298.1499999999987
+Mean happiness: 67.0
+Mean time: 56 miliseconds
+
+----------------------
+Epsilon happiness: 8
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1333.0250000000005
+Mean happiness: 71.0
+Mean time: 21 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1336.68
+Mean happiness: 71.0
+Mean time: 36 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1332.3399999999988
+Mean happiness: 71.0
+Mean time: 49 miliseconds
+
+----------------------
+Epsilon happiness: 9
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1365.2700000000002
+Mean happiness: 75.0
+Mean time: 18 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1375.7699999999995
+Mean happiness: 77.0
+Mean time: 37 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1359.0949999999996
+Mean happiness: 74.0
+Mean time: 57 miliseconds
+
+----------------------
+Epsilon happiness: 10
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1396.944999999999
+Mean happiness: 78.0
+Mean time: 17 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1404.5000000000002
+Mean happiness: 79.0
+Mean time: 32 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1401.669999999999
+Mean happiness: 79.0
+Mean time: 48 miliseconds
+
+----------------------
+Epsilon happiness: 11
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1446.4699999999998
+Mean happiness: 83.0
+Mean time: 18 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1455.345
+Mean happiness: 84.0
+Mean time: 31 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1466.2399999999993
+Mean happiness: 85.0
+Mean time: 58 miliseconds
+
+----------------------
+Epsilon happiness: 12
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1491.8349999999996
+Mean happiness: 87.0
+Mean time: 15 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1491.9350000000002
+Mean happiness: 87.0
+Mean time: 33 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1487.9449999999993
+Mean happiness: 87.0
+Mean time: 45 miliseconds
+
+----------------------
+Epsilon happiness: 13
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1568.7599999999998
+Mean happiness: 93.0
+Mean time: 15 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1555.09
+Mean happiness: 92.0
+Mean time: 29 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1534.0599999999981
+Mean happiness: 91.0
+Mean time: 62 miliseconds
+
+----------------------
+Epsilon happiness: 14
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1594.1750000000004
+Mean happiness: 94.0
+Mean time: 15 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1605.08
+Mean happiness: 96.0
+Mean time: 31 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1591.3500000000006
+Mean happiness: 95.0
+Mean time: 43 miliseconds
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 6789
+- Proportion: 1.2, seed: 6789
+······································
+
+Initial price: 865,4300
+Initial happiness: 0
+
+----------------------
+Epsilon happiness: 0
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 863.0500000000004
+Mean happiness: 0.0
+Mean time: 31 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 861.3449999999997
+Mean happiness: 0.0
+Mean time: 54 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 862.0649999999996
+Mean happiness: 0.0
+Mean time: 80 miliseconds
+
+----------------------
+Epsilon happiness: 1
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 867.8599999999999
+Mean happiness: 9.0
+Mean time: 23 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 865.7800000000001
+Mean happiness: 9.0
+Mean time: 49 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 866.935
+Mean happiness: 10.0
+Mean time: 70 miliseconds
+
+----------------------
+Epsilon happiness: 2
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 915.5049999999999
+Mean happiness: 42.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 919.4949999999994
+Mean happiness: 43.0
+Mean time: 34 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 921.5749999999998
+Mean happiness: 44.0
+Mean time: 48 miliseconds
+
+----------------------
+Epsilon happiness: 3
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 955.6549999999994
+Mean happiness: 59.0
+Mean time: 19 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 960.7499999999999
+Mean happiness: 59.0
+Mean time: 31 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 954.4649999999995
+Mean happiness: 58.0
+Mean time: 54 miliseconds
+
+----------------------
+Epsilon happiness: 4
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1010.6099999999996
+Mean happiness: 73.0
+Mean time: 21 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1004.9250000000005
+Mean happiness: 72.0
+Mean time: 35 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1012.7800000000005
+Mean happiness: 74.0
+Mean time: 45 miliseconds
+
+----------------------
+Epsilon happiness: 5
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1064.2800000000002
+Mean happiness: 84.0
+Mean time: 19 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1065.5350000000003
+Mean happiness: 84.0
+Mean time: 40 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1054.3749999999998
+Mean happiness: 83.0
+Mean time: 77 miliseconds
+
+----------------------
+Epsilon happiness: 6
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1097.435
+Mean happiness: 90.0
+Mean time: 22 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1115.535
+Mean happiness: 93.0
+Mean time: 43 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1095.0200000000002
+Mean happiness: 90.0
+Mean time: 89 miliseconds
+
+----------------------
+Epsilon happiness: 7
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1146.1650000000006
+Mean happiness: 99.0
+Mean time: 34 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1144.964999999999
+Mean happiness: 97.0
+Mean time: 39 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1166.355
+Mean happiness: 102.0
+Mean time: 46 miliseconds
+
+----------------------
+Epsilon happiness: 8
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1182.6400000000008
+Mean happiness: 104.0
+Mean time: 16 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1182.4850000000006
+Mean happiness: 104.0
+Mean time: 31 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1184.2349999999988
+Mean happiness: 103.0
+Mean time: 66 miliseconds
+
+----------------------
+Epsilon happiness: 9
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1221.2649999999996
+Mean happiness: 107.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1183.6799999999992
+Mean happiness: 103.0
+Mean time: 51 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1193.2999999999993
+Mean happiness: 103.0
+Mean time: 56 miliseconds
+
+----------------------
+Epsilon happiness: 10
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1228.804999999999
+Mean happiness: 107.0
+Mean time: 22 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1251.2850000000012
+Mean happiness: 110.0
+Mean time: 44 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1235.87
+Mean happiness: 108.0
+Mean time: 55 miliseconds
+
+----------------------
+Epsilon happiness: 11
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1272.1249999999995
+Mean happiness: 112.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1289.02
+Mean happiness: 113.0
+Mean time: 36 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1299.499999999999
+Mean happiness: 114.0
+Mean time: 48 miliseconds
+
+----------------------
+Epsilon happiness: 12
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1322.0699999999995
+Mean happiness: 115.0
+Mean time: 17 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1326.9100000000008
+Mean happiness: 117.0
+Mean time: 43 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1310.685
+Mean happiness: 116.0
+Mean time: 56 miliseconds
+
+----------------------
+Epsilon happiness: 13
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1331.235
+Mean happiness: 118.0
+Mean time: 21 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1344.224999999999
+Mean happiness: 117.0
+Mean time: 32 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1329.1799999999996
+Mean happiness: 117.0
+Mean time: 61 miliseconds
+
+----------------------
+Epsilon happiness: 14
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1345.0350000000003
+Mean happiness: 118.0
+Mean time: 18 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1380.8349999999982
+Mean happiness: 120.0
+Mean time: 33 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1350.2599999999989
+Mean happiness: 119.0
+Mean time: 59 miliseconds
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 7890
+- Proportion: 1.2, seed: 7890
+······································
+
+Initial price: 982,6250
+Initial happiness: 0
+
+----------------------
+Epsilon happiness: 0
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 982.3750000000001
+Mean happiness: 0.0
+Mean time: 35 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 982.6249999999999
+Mean happiness: 0.0
+Mean time: 68 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 982.6249999999999
+Mean happiness: 0.0
+Mean time: 96 miliseconds
+
+----------------------
+Epsilon happiness: 1
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 984.3149999999999
+Mean happiness: 2.0
+Mean time: 36 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 993.7299999999996
+Mean happiness: 12.0
+Mean time: 60 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 982.6249999999999
+Mean happiness: 0.0
+Mean time: 83 miliseconds
+
+----------------------
+Epsilon happiness: 2
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1026.05
+Mean happiness: 30.0
+Mean time: 31 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1024.7849999999994
+Mean happiness: 30.0
+Mean time: 53 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1027.35
+Mean happiness: 32.0
+Mean time: 70 miliseconds
+
+----------------------
+Epsilon happiness: 3
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1082.4499999999998
+Mean happiness: 53.0
+Mean time: 26 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1079.385
+Mean happiness: 50.0
+Mean time: 43 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1084.4899999999998
+Mean happiness: 54.0
+Mean time: 65 miliseconds
+
+----------------------
+Epsilon happiness: 4
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1124.1299999999999
+Mean happiness: 66.0
+Mean time: 22 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1109.5050000000015
+Mean happiness: 61.0
+Mean time: 39 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1102.845000000001
+Mean happiness: 59.0
+Mean time: 56 miliseconds
+
+----------------------
+Epsilon happiness: 5
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1175.02
+Mean happiness: 75.0
+Mean time: 19 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1169.4250000000015
+Mean happiness: 74.0
+Mean time: 36 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1163.450000000001
+Mean happiness: 73.0
+Mean time: 62 miliseconds
+
+----------------------
+Epsilon happiness: 6
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1237.040000000001
+Mean happiness: 86.0
+Mean time: 21 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1238.6000000000013
+Mean happiness: 86.0
+Mean time: 33 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1247.3000000000002
+Mean happiness: 87.0
+Mean time: 53 miliseconds
+
+----------------------
+Epsilon happiness: 7
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1326.1849999999986
+Mean happiness: 99.0
+Mean time: 19 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1319.959999999999
+Mean happiness: 98.0
+Mean time: 36 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1317.6349999999995
+Mean happiness: 98.0
+Mean time: 46 miliseconds
+
+----------------------
+Epsilon happiness: 8
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1354.9150000000006
+Mean happiness: 102.0
+Mean time: 15 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1345.1799999999998
+Mean happiness: 101.0
+Mean time: 47 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1355.7199999999993
+Mean happiness: 102.0
+Mean time: 67 miliseconds
+
+----------------------
+Epsilon happiness: 9
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1360.0600000000009
+Mean happiness: 103.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1366.0649999999991
+Mean happiness: 104.0
+Mean time: 60 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1360.3700000000013
+Mean happiness: 103.0
+Mean time: 46 miliseconds
+
+----------------------
+Epsilon happiness: 10
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1399.4949999999994
+Mean happiness: 107.0
+Mean time: 28 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1400.2699999999995
+Mean happiness: 107.0
+Mean time: 47 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1421.054999999999
+Mean happiness: 109.0
+Mean time: 46 miliseconds
+
+----------------------
+Epsilon happiness: 11
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1416.1350000000004
+Mean happiness: 109.0
+Mean time: 16 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1421.809999999999
+Mean happiness: 109.0
+Mean time: 42 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1408.94
+Mean happiness: 108.0
+Mean time: 46 miliseconds
+
+----------------------
+Epsilon happiness: 12
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1445.8899999999994
+Mean happiness: 111.0
+Mean time: 24 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1440.595
+Mean happiness: 111.0
+Mean time: 40 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1451.6099999999992
+Mean happiness: 112.0
+Mean time: 96 miliseconds
+
+----------------------
+Epsilon happiness: 13
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1480.559999999999
+Mean happiness: 114.0
+Mean time: 28 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1497.2050000000004
+Mean happiness: 115.0
+Mean time: 46 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1467.52
+Mean happiness: 113.0
+Mean time: 64 miliseconds
+
+----------------------
+Epsilon happiness: 14
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1478.6349999999984
+Mean happiness: 114.0
+Mean time: 24 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1509.0550000000007
+Mean happiness: 116.0
+Mean time: 29 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1478.455
+Mean happiness: 114.0
+Mean time: 78 miliseconds
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 8901
+- Proportion: 1.2, seed: 8901
+······································
+
+Initial price: 917,7650
+Initial happiness: 0
+
+----------------------
+Epsilon happiness: 0
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 915.965
+Mean happiness: 0.0
+Mean time: 39 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 915.7699999999996
+Mean happiness: 0.0
+Mean time: 69 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 917.1199999999998
+Mean happiness: 0.0
+Mean time: 114 miliseconds
+
+----------------------
+Epsilon happiness: 1
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 922.3300000000002
+Mean happiness: 7.0
+Mean time: 37 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 917.765
+Mean happiness: 0.0
+Mean time: 70 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 917.765
+Mean happiness: 0.0
+Mean time: 97 miliseconds
+
+----------------------
+Epsilon happiness: 2
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 955.1349999999996
+Mean happiness: 23.0
+Mean time: 38 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 950.655
+Mean happiness: 22.0
+Mean time: 58 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 957.84
+Mean happiness: 26.0
+Mean time: 98 miliseconds
+
+----------------------
+Epsilon happiness: 3
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1004.9850000000002
+Mean happiness: 45.0
+Mean time: 41 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1004.5099999999996
+Mean happiness: 45.0
+Mean time: 55 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1025.8949999999998
+Mean happiness: 52.0
+Mean time: 67 miliseconds
+
+----------------------
+Epsilon happiness: 4
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1042.155
+Mean happiness: 56.0
+Mean time: 28 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1049.1249999999998
+Mean happiness: 58.0
+Mean time: 46 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1057.4100000000008
+Mean happiness: 59.0
+Mean time: 74 miliseconds
+
+----------------------
+Epsilon happiness: 5
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1071.1250000000002
+Mean happiness: 62.0
+Mean time: 26 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1087.0749999999996
+Mean happiness: 64.0
+Mean time: 39 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1068.0249999999985
+Mean happiness: 61.0
+Mean time: 91 miliseconds
+
+----------------------
+Epsilon happiness: 6
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1124.514999999999
+Mean happiness: 72.0
+Mean time: 24 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1123.9049999999997
+Mean happiness: 71.0
+Mean time: 40 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1118.1000000000013
+Mean happiness: 70.0
+Mean time: 53 miliseconds
+
+----------------------
+Epsilon happiness: 7
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1173.5149999999996
+Mean happiness: 79.0
+Mean time: 32 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1195.6949999999997
+Mean happiness: 82.0
+Mean time: 38 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1182.0650000000012
+Mean happiness: 80.0
+Mean time: 68 miliseconds
+
+----------------------
+Epsilon happiness: 8
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1227.2700000000002
+Mean happiness: 86.0
+Mean time: 19 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1236.7349999999992
+Mean happiness: 87.0
+Mean time: 37 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1211.2249999999997
+Mean happiness: 84.0
+Mean time: 71 miliseconds
+
+----------------------
+Epsilon happiness: 9
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1294.4949999999997
+Mean happiness: 94.0
+Mean time: 18 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1294.9950000000006
+Mean happiness: 94.0
+Mean time: 42 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1294.8000000000009
+Mean happiness: 94.0
+Mean time: 54 miliseconds
+
+----------------------
+Epsilon happiness: 10
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1333.0400000000009
+Mean happiness: 98.0
+Mean time: 37 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1353.0300000000013
+Mean happiness: 100.0
+Mean time: 31 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1320.8949999999995
+Mean happiness: 96.0
+Mean time: 95 miliseconds
+
+----------------------
+Epsilon happiness: 11
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1425.5150000000006
+Mean happiness: 107.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1436.3450000000003
+Mean happiness: 108.0
+Mean time: 39 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1426.2650000000003
+Mean happiness: 107.0
+Mean time: 53 miliseconds
+
+----------------------
+Epsilon happiness: 12
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1449.8950000000004
+Mean happiness: 109.0
+Mean time: 39 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1420.1199999999994
+Mean happiness: 105.0
+Mean time: 63 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1385.0699999999986
+Mean happiness: 100.0
+Mean time: 66 miliseconds
+
+----------------------
+Epsilon happiness: 13
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1414.43
+Mean happiness: 103.0
+Mean time: 21 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1468.1999999999987
+Mean happiness: 108.0
+Mean time: 46 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1441.5449999999985
+Mean happiness: 106.0
+Mean time: 70 miliseconds
+
+----------------------
+Epsilon happiness: 14
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1506.8650000000002
+Mean happiness: 111.0
+Mean time: 21 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1494.335000000001
+Mean happiness: 111.0
+Mean time: 53 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1528.650000000001
+Mean happiness: 111.0
+Mean time: 59 miliseconds
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 9012
+- Proportion: 1.2, seed: 9012
+······································
+
+Initial price: 1100,5700
+Initial happiness: 0
+
+----------------------
+Epsilon happiness: 0
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1100.47
+Mean happiness: 0.0
+Mean time: 30 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1100.57
+Mean happiness: 0.0
+Mean time: 57 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1100.57
+Mean happiness: 0.0
+Mean time: 83 miliseconds
+
+----------------------
+Epsilon happiness: 1
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1111.435
+Mean happiness: 14.0
+Mean time: 31 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1105.0099999999998
+Mean happiness: 6.0
+Mean time: 51 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1108.855
+Mean happiness: 11.0
+Mean time: 89 miliseconds
+
+----------------------
+Epsilon happiness: 2
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1140.2949999999998
+Mean happiness: 32.0
+Mean time: 30 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1139.5899999999997
+Mean happiness: 32.0
+Mean time: 55 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1144.0650000000003
+Mean happiness: 34.0
+Mean time: 77 miliseconds
+
+----------------------
+Epsilon happiness: 3
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1184.8700000000001
+Mean happiness: 49.0
+Mean time: 24 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1176.259999999999
+Mean happiness: 47.0
+Mean time: 49 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1182.6499999999996
+Mean happiness: 48.0
+Mean time: 65 miliseconds
+
+----------------------
+Epsilon happiness: 4
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1209.0649999999994
+Mean happiness: 55.0
+Mean time: 22 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1221.2349999999985
+Mean happiness: 58.0
+Mean time: 41 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1206.3649999999993
+Mean happiness: 55.0
+Mean time: 62 miliseconds
+
+----------------------
+Epsilon happiness: 5
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1258.8299999999992
+Mean happiness: 67.0
+Mean time: 19 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1276.2800000000004
+Mean happiness: 70.0
+Mean time: 40 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1279.4899999999996
+Mean happiness: 70.0
+Mean time: 51 miliseconds
+
+----------------------
+Epsilon happiness: 6
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1345.5900000000001
+Mean happiness: 82.0
+Mean time: 17 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1351.305
+Mean happiness: 83.0
+Mean time: 35 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1349.645
+Mean happiness: 83.0
+Mean time: 51 miliseconds
+
+----------------------
+Epsilon happiness: 7
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1368.329999999998
+Mean happiness: 86.0
+Mean time: 24 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1363.5350000000003
+Mean happiness: 85.0
+Mean time: 34 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1360.3849999999998
+Mean happiness: 85.0
+Mean time: 52 miliseconds
+
+----------------------
+Epsilon happiness: 8
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1391.5999999999972
+Mean happiness: 89.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1403.965
+Mean happiness: 90.0
+Mean time: 48 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1394.2199999999982
+Mean happiness: 89.0
+Mean time: 57 miliseconds
+
+----------------------
+Epsilon happiness: 9
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1442.4349999999984
+Mean happiness: 95.0
+Mean time: 19 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1437.1099999999994
+Mean happiness: 94.0
+Mean time: 36 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1442.4749999999997
+Mean happiness: 94.0
+Mean time: 65 miliseconds
+
+----------------------
+Epsilon happiness: 10
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1468.2949999999987
+Mean happiness: 97.0
+Mean time: 23 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1453.9400000000012
+Mean happiness: 96.0
+Mean time: 39 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1455.009999999999
+Mean happiness: 96.0
+Mean time: 79 miliseconds
+
+----------------------
+Epsilon happiness: 11
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1503.3599999999992
+Mean happiness: 100.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1496.8649999999996
+Mean happiness: 100.0
+Mean time: 58 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1492.5749999999994
+Mean happiness: 99.0
+Mean time: 58 miliseconds
+
+----------------------
+Epsilon happiness: 12
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1541.6200000000006
+Mean happiness: 104.0
+Mean time: 16 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1520.504999999999
+Mean happiness: 102.0
+Mean time: 46 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1525.375000000001
+Mean happiness: 102.0
+Mean time: 60 miliseconds
+
+----------------------
+Epsilon happiness: 13
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1548.8550000000002
+Mean happiness: 104.0
+Mean time: 22 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1545.4149999999988
+Mean happiness: 104.0
+Mean time: 43 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1550.524999999998
+Mean happiness: 104.0
+Mean time: 55 miliseconds
+
+----------------------
+Epsilon happiness: 14
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1585.714999999999
+Mean happiness: 106.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1570.5749999999994
+Mean happiness: 105.0
+Mean time: 36 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1587.250000000001
+Mean happiness: 106.0
+Mean time: 47 miliseconds
+
+······ Experiment Configuration ······ 
+- # Packages: 100, seed: 123
+- Proportion: 1.2, seed: 123
+······································
+
+Initial price: 969,7750
+Initial happiness: 0
+
+----------------------
+Epsilon happiness: 0
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 969.0999999999999
+Mean happiness: 0.0
+Mean time: 44 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 967.9900000000004
+Mean happiness: 0.0
+Mean time: 74 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 969.7750000000001
+Mean happiness: 0.0
+Mean time: 103 miliseconds
+
+----------------------
+Epsilon happiness: 1
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 979.2950000000001
+Mean happiness: 10.0
+Mean time: 47 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 974.5000000000007
+Mean happiness: 6.0
+Mean time: 74 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 979.0050000000008
+Mean happiness: 10.0
+Mean time: 109 miliseconds
+
+----------------------
+Epsilon happiness: 2
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1004.6149999999996
+Mean happiness: 27.0
+Mean time: 30 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1002.8499999999998
+Mean happiness: 26.0
+Mean time: 60 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1007.8199999999996
+Mean happiness: 27.0
+Mean time: 87 miliseconds
+
+----------------------
+Epsilon happiness: 3
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1054.6799999999998
+Mean happiness: 46.0
+Mean time: 31 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1062.8400000000008
+Mean happiness: 48.0
+Mean time: 48 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1062.5799999999995
+Mean happiness: 48.0
+Mean time: 72 miliseconds
+
+----------------------
+Epsilon happiness: 4
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1119.7949999999994
+Mean happiness: 63.0
+Mean time: 23 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1111.3999999999999
+Mean happiness: 61.0
+Mean time: 46 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1127.2499999999986
+Mean happiness: 65.0
+Mean time: 89 miliseconds
+
+----------------------
+Epsilon happiness: 5
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1174.050000000001
+Mean happiness: 75.0
+Mean time: 25 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1178.8749999999995
+Mean happiness: 76.0
+Mean time: 37 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1194.5700000000008
+Mean happiness: 79.0
+Mean time: 46 miliseconds
+
+----------------------
+Epsilon happiness: 6
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1250.265
+Mean happiness: 89.0
+Mean time: 19 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1275.1500000000008
+Mean happiness: 93.0
+Mean time: 35 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1249.9999999999998
+Mean happiness: 89.0
+Mean time: 48 miliseconds
+
+----------------------
+Epsilon happiness: 7
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1217.2999999999997
+Mean happiness: 77.0
+Mean time: 29 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1320.7200000000003
+Mean happiness: 100.0
+Mean time: 30 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1338.5749999999998
+Mean happiness: 103.0
+Mean time: 44 miliseconds
+
+----------------------
+Epsilon happiness: 8
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1271.0400000000002
+Mean happiness: 84.0
+Mean time: 22 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1265.5800000000006
+Mean happiness: 87.0
+Mean time: 52 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1329.0950000000005
+Mean happiness: 101.0
+Mean time: 55 miliseconds
+
+----------------------
+Epsilon happiness: 9
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1398.9999999999995
+Mean happiness: 110.0
+Mean time: 19 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1309.150000000001
+Mean happiness: 87.0
+Mean time: 43 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1291.6349999999989
+Mean happiness: 88.0
+Mean time: 66 miliseconds
+
+----------------------
+Epsilon happiness: 10
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1351.9750000000013
+Mean happiness: 92.0
+Mean time: 20 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1331.3349999999987
+Mean happiness: 92.0
+Mean time: 42 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1367.7650000000012
+Mean happiness: 93.0
+Mean time: 57 miliseconds
+
+----------------------
+Epsilon happiness: 11
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1401.79
+Mean happiness: 98.0
+Mean time: 19 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1376.2749999999992
+Mean happiness: 101.0
+Mean time: 51 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1426.4199999999987
+Mean happiness: 98.0
+Mean time: 54 miliseconds
+
+----------------------
+Epsilon happiness: 12
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1442.7200000000016
+Mean happiness: 110.0
+Mean time: 25 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1469.260000000001
+Mean happiness: 115.0
+Mean time: 53 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1456.7999999999995
+Mean happiness: 100.0
+Mean time: 45 miliseconds
+
+----------------------
+Epsilon happiness: 13
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1453.4499999999996
+Mean happiness: 103.0
+Mean time: 19 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1501.9099999999994
+Mean happiness: 104.0
+Mean time: 40 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1479.1850000000006
+Mean happiness: 102.0
+Mean time: 46 miliseconds
+
+----------------------
+Epsilon happiness: 14
+----------------------
+
+Operator: Move
+
+******* Results *********
+Mean Price: 1493.21
+Mean happiness: 106.0
+Mean time: 21 miliseconds
+
+Operator: Swap
+
+******* Results *********
+Mean Price: 1533.3350000000005
+Mean happiness: 107.0
+Mean time: 37 miliseconds
+
+Operator: Move & Swap
+
+******* Results *********
+Mean Price: 1504.7199999999998
+Mean happiness: 106.0
+Mean time: 52 miliseconds

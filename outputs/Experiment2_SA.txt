@@ -9,24 +9,24 @@ Initial price: 796,6400
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 796.2619999999995
-Mean time: 34 miliseconds
+Mean Price: 795.2849999999996
+Mean time: 50 miliseconds
 
 Initial State: B
 Initial price: 1021,8550
 Initial happiness: 42
 
 ******* Results *********
-Mean Price: 806.4014999999997
-Mean time: 25 miliseconds
+Mean Price: 815.9759999999994
+Mean time: 39 miliseconds
 
 Initial State: C
 Initial price: 807,0900
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 798.165
-Mean time: 16 miliseconds
+Mean Price: 797.2234999999998
+Mean time: 30 miliseconds
 
 ······ Experiment Configuration ······ 
 - # Packages: 100, seed: 2345
@@ -38,24 +38,24 @@ Initial price: 932,5200
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 931.5460000000003
-Mean time: 16 miliseconds
+Mean Price: 931.267
+Mean time: 39 miliseconds
 
 Initial State: B
 Initial price: 1137,8950
 Initial happiness: 34
 
 ******* Results *********
-Mean Price: 955.4049999999994
-Mean time: 30 miliseconds
+Mean Price: 953.3919999999993
+Mean time: 55 miliseconds
 
 Initial State: C
 Initial price: 959,0850
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 926.9414999999992
-Mean time: 12 miliseconds
+Mean Price: 927.8239999999994
+Mean time: 22 miliseconds
 
 ······ Experiment Configuration ······ 
 - # Packages: 100, seed: 3456
@@ -67,24 +67,24 @@ Initial price: 864,4900
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 863.7049999999996
-Mean time: 15 miliseconds
+Mean Price: 862.9469999999998
+Mean time: 31 miliseconds
 
 Initial State: B
 Initial price: 1061,3800
 Initial happiness: 43
 
 ******* Results *********
-Mean Price: 871.3555
-Mean time: 23 miliseconds
+Mean Price: 866.3724999999997
+Mean time: 37 miliseconds
 
 Initial State: C
 Initial price: 901,8300
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 856.7934999999994
-Mean time: 13 miliseconds
+Mean Price: 858.3189999999997
+Mean time: 36 miliseconds
 
 ······ Experiment Configuration ······ 
 - # Packages: 100, seed: 4567
@@ -96,24 +96,24 @@ Initial price: 892,2700
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 888.3670000000002
-Mean time: 14 miliseconds
+Mean Price: 886.9400000000002
+Mean time: 30 miliseconds
 
 Initial State: B
 Initial price: 1094,0800
 Initial happiness: 36
 
 ******* Results *********
-Mean Price: 887.1435000000007
-Mean time: 14 miliseconds
+Mean Price: 886.2315000000006
+Mean time: 29 miliseconds
 
 Initial State: C
 Initial price: 943,9500
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 854.6854999999996
-Mean time: 9 miliseconds
+Mean Price: 854.2844999999998
+Mean time: 19 miliseconds
 
 ······ Experiment Configuration ······ 
 - # Packages: 100, seed: 5678
@@ -125,24 +125,24 @@ Initial price: 1065,6000
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 1062.2165
-Mean time: 17 miliseconds
+Mean Price: 1059.3324999999998
+Mean time: 35 miliseconds
 
 Initial State: B
 Initial price: 1240,5050
 Initial happiness: 29
 
 ******* Results *********
-Mean Price: 1069.6824999999994
-Mean time: 20 miliseconds
+Mean Price: 1075.0089999999996
+Mean time: 45 miliseconds
 
 Initial State: C
 Initial price: 1108,5900
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 1043.3785000000005
-Mean time: 12 miliseconds
+Mean Price: 1040.4035000000003
+Mean time: 25 miliseconds
 
 ······ Experiment Configuration ······ 
 - # Packages: 100, seed: 6789
@@ -154,24 +154,24 @@ Initial price: 865,4300
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 862.5974999999999
-Mean time: 11 miliseconds
+Mean Price: 862.3089999999999
+Mean time: 25 miliseconds
 
 Initial State: B
 Initial price: 1059,3550
 Initial happiness: 37
 
 ******* Results *********
-Mean Price: 878.5525000000001
-Mean time: 13 miliseconds
+Mean Price: 874.1750000000004
+Mean time: 26 miliseconds
 
 Initial State: C
 Initial price: 870,2850
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 860.3775000000003
-Mean time: 12 miliseconds
+Mean Price: 860.0880000000001
+Mean time: 24 miliseconds
 
 ······ Experiment Configuration ······ 
 - # Packages: 100, seed: 7890
@@ -183,24 +183,24 @@ Initial price: 982,6250
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 982.6074999999998
-Mean time: 16 miliseconds
+Mean Price: 982.6189999999999
+Mean time: 34 miliseconds
 
 Initial State: B
 Initial price: 1196,3500
 Initial happiness: 38
 
 ******* Results *********
-Mean Price: 1003.8935000000004
-Mean time: 16 miliseconds
+Mean Price: 1007.841
+Mean time: 35 miliseconds
 
 Initial State: C
 Initial price: 1005,1900
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 972.9085000000002
-Mean time: 14 miliseconds
+Mean Price: 970.9520000000002
+Mean time: 27 miliseconds
 
 ······ Experiment Configuration ······ 
 - # Packages: 100, seed: 8901
@@ -212,24 +212,24 @@ Initial price: 917,7650
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 917.549
-Mean time: 17 miliseconds
+Mean Price: 916.4005000000001
+Mean time: 36 miliseconds
 
 Initial State: B
 Initial price: 1120,7550
 Initial happiness: 27
 
 ******* Results *********
-Mean Price: 934.8525000000003
-Mean time: 21 miliseconds
+Mean Price: 932.1934999999997
+Mean time: 39 miliseconds
 
 Initial State: C
 Initial price: 942,1350
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 902.6000000000004
-Mean time: 16 miliseconds
+Mean Price: 903.0205000000005
+Mean time: 27 miliseconds
 
 ······ Experiment Configuration ······ 
 - # Packages: 100, seed: 9012
@@ -241,24 +241,24 @@ Initial price: 1100,5700
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 1100.549
-Mean time: 19 miliseconds
+Mean Price: 1100.4684999999997
+Mean time: 29 miliseconds
 
 Initial State: B
 Initial price: 1382,0600
 Initial happiness: 45
 
 ******* Results *********
-Mean Price: 1118.5639999999992
-Mean time: 22 miliseconds
+Mean Price: 1117.7204999999997
+Mean time: 30 miliseconds
 
 Initial State: C
 Initial price: 1128,7350
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 1086.4945000000002
-Mean time: 14 miliseconds
+Mean Price: 1088.1540000000005
+Mean time: 22 miliseconds
 
 ······ Experiment Configuration ······ 
 - # Packages: 100, seed: 123
@@ -270,21 +270,21 @@ Initial price: 969,7750
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 969.747
-Mean time: 19 miliseconds
+Mean Price: 969.0870000000001
+Mean time: 38 miliseconds
 
 Initial State: B
 Initial price: 1195,9400
 Initial happiness: 35
 
 ******* Results *********
-Mean Price: 986.3455000000001
-Mean time: 19 miliseconds
+Mean Price: 991.5150000000001
+Mean time: 38 miliseconds
 
 Initial State: C
 Initial price: 992,9450
 Initial happiness: 0
 
 ******* Results *********
-Mean Price: 954.2490000000001
-Mean time: 13 miliseconds
+Mean Price: 953.1390000000001
+Mean time: 24 miliseconds

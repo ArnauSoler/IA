@@ -10,8 +10,8 @@ Mean initial price: 938.7684999999998
 Mean initial happiness: 0.0
 
 ******* Results *********
-Mean Price: 937.5146499999998
-Mean time: 17 miliseconds
+Mean Price: 936.6655499999997
+Mean time: 34 miliseconds
 
 
 Initial States: B
@@ -19,8 +19,8 @@ Mean initial price: 1151.0175
 Mean initial happiness: 36.6
 
 ******* Results *********
-Mean Price: 951.2195999999998
-Mean time: 20 miliseconds
+Mean Price: 952.0425999999998
+Mean time: 37 miliseconds
 
 
 Initial States: C
@@ -28,6 +28,6 @@ Mean initial price: 965.9834999999999
 Mean initial happiness: 0.0
 
 ******* Results *********
-Mean Price: 925.6593500000001
-Mean time: 13 miliseconds
+Mean Price: 925.3408
+Mean time: 25 miliseconds
 

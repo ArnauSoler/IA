@@ -363,7 +363,7 @@ public class Experiments {
 		
 		for(int j = 1; j <= 1; ++j){
 			// System.out.print(j + " ");
-			for(int w = 1; w <= 1; ++w){
+			for(int w = 0; w <= 5; ++w){
 				System.out.print(w + " ");
 				for(int k = 0; k <= 3; ++k){
 					for(int l = 0; l <= 4; ++l){
@@ -384,7 +384,7 @@ public class Experiments {
 							HeuristicFunction f_heuristic = new AzamonHeuristicCost();
 							
 							Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(3), new AzamonGoalTest(), f_heuristic);
-							SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps * j, w, ks[k], lamb[l]);
+							SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps * j, stiters[w], ks[k], lamb[l]);
 						
 							try {
 								long time = System.nanoTime();
@@ -398,7 +398,7 @@ public class Experiments {
 								e.printStackTrace();
 							}		
 						}
-						buffer_functions(steps * j + " \t" + w + " \t" + k + " \t" + numberFormat.format(lamb[l]), "write");
+						buffer_functions(steps * j + " \t" + stiters[w] + " \t" + ks[k] + " \t" + numberFormat.format(lamb[l]), "write");
 						buffer_functions("\t" + numberFormat.format(meanPrice / iterations), "write");
 						buffer_functions("\t" + ((float) Math.round(meanTime/1000000))/iterations + "\n", "write");
 						
@@ -635,8 +635,8 @@ public class Experiments {
 				
 				Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(j+1), new AzamonGoalTest(), f_heuristic);
 				
-				int steps = 10000;
-				int stiter = 100;
+				int steps = 20000;
+				int stiter = 1;
 				int k = 1;
 				double lamb = 0.01;
 				SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps, stiter, k, lamb);
@@ -735,8 +735,8 @@ public class Experiments {
 				
 				Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(), new AzamonGoalTest(), f_heuristic);
 				
-				int steps = 5000;
-				int stiter = 100;
+				int steps = 10000;
+				int stiter = 1;
 				int k = 1;
 				double lamb = 0.01;
 				SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps, stiter, k, lamb);
@@ -817,8 +817,8 @@ public class Experiments {
 				
 				Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(), new AzamonGoalTest(), f_heuristic);
 				
-				int steps = 5000;
-				int stiter = 100;
+				int steps = 10000;
+				int stiter = 1;
 				int k = 1;
 				double lamb = 0.01;
 				SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps, stiter, k, lamb);
@@ -862,8 +862,8 @@ public class Experiments {
 				
 				Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(), new AzamonGoalTest(), f_heuristic);
 				
-				int steps = 5000;
-				int stiter = 100;
+				int steps = 10000;
+				int stiter = 1;
 				int k = 1;
 				double lamb = 0.01;
 				SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps * (j+1), stiter, k, lamb);
@@ -902,84 +902,99 @@ public class Experiments {
 		DecimalFormat numberFormat = new DecimalFormat("#0.0000");
 		
 		int numPaq = 100;
-		int seedPaquetes = 1234;
 		double proportion = 1.2;
-		int seedOfertas = 1234;
+		double meanInitialPrice = 0;
+		double meanInitialHappiness = 0;
+		double totalMeanPrice[][] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+		long totalMeanHappiness[][] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+		long totalMeanTime[][] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+		String[] operators = {"Move","Swap","Move & Swap"};
 		
-		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
-		buffer_functions("- # Packages: " + numPaq + ", seed: " + seedPaquetes + "\n", "write");
-		buffer_functions("- Proportion: " + proportion + ", seed: " + seedOfertas + "\n", "write");
-		buffer_functions("······································\n" +"\n", "write");
-		
-		AzamonState azamonState = new AzamonState(numPaq, seedPaquetes, proportion, seedOfertas);
-		azamonState.generateInitialStateA();
+		for(int i = 0; i < seeds.length; ++i){
+			buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+			buffer_functions("- # Packages: " + numPaq + ", seed: " + seeds[i] + "\n", "write");
+			buffer_functions("- Proportion: " + proportion + ", seed: " + seeds[i] + "\n", "write");
+			buffer_functions("······································\n" +"\n", "write");
+			
+			AzamonState azamonState = new AzamonState(numPaq, seeds[i], proportion, seeds[i]);
+			azamonState.generateInitialStateA();
+			meanInitialPrice += azamonState.getPrice();
+			meanInitialHappiness += azamonState.getHappiness();
 
-		buffer_functions("Initial price: " + numberFormat.format(azamonState.getPrice()) + "\n", "write");
-		buffer_functions("Initial happiness: " + azamonState.getHappiness() + "\n", "write");	
-		
-		System.out.println("Initial price: " + azamonState.getPrice());
-		System.out.println("Initial happiness: " + azamonState.getHappiness() + "\n");
-		
+			buffer_functions("Initial price: " + numberFormat.format(azamonState.getPrice()) + "\n", "write");
+			buffer_functions("Initial happiness: " + azamonState.getHappiness() + "\n", "write");	
+	
+			for(int l = 0; l < 15; ++l){
+				System.out.println("###########################################");
+				System.out.println("Epsilon happines: " + l);
+				buffer_functions("\n----------------------\n", "write");
+				buffer_functions("Epsilon happiness: " + l + "\n", "write");
+				buffer_functions("----------------------\n", "write");
+				HeuristicFunction f_heuristic = new AzamonHeuristicHappiness(l);
+				
+				for(int j = 0; j < 3; ++j){
+					
+					Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(), new AzamonGoalTest(), f_heuristic);
+				
+					int steps = 10000;
+					int stiter = 1;
+					int k = 1;
+					double lamb = 0.01;
+					SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps * (j+1), stiter, k, lamb);
+				
+					double meanPrice = 0;
+					double price = 0;
+					double meanHappiness = 0;
+					double happiness = 0;
+					long meanTime = 0;
+					int iterations = 1;
+					
+					for(int w = 0; w < iterations; ++w){
+						try {
+							long time = System.nanoTime();
+							SearchAgent searchAgent = new SearchAgent(problem, simulatedAnnealingSearch);
+							AzamonState state = (AzamonState) simulatedAnnealingSearch.getGoalState();		
+							meanTime += (System.nanoTime() - time);
+							price = state.getPrice();	
+							meanPrice += price;
+							happiness = state.getHappiness();
+							meanHappiness += happiness;
+						
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+					}
+					
+					buffer_functions("\nOperator: " + operators[j] + "\n", "write");
+					buffer_functions("\n******* Results *********\n", "write");
+					buffer_functions("Mean Price: " + meanPrice/iterations + "\n", "write");
+					buffer_functions("Mean happiness: " + meanHappiness/iterations + "\n", "write");
+					buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n", "write");
+					totalMeanPrice[l][j] += meanPrice/iterations;
+					totalMeanHappiness[l][j] += meanHappiness/iterations;
+					totalMeanTime[l][j] += Math.round(meanTime/1000000)/iterations;
+				}
+			}
+		}
+		buffer_functions(null, "close");
+
+		Output("Experiment6_SA_mean.txt");
+		buffer_functions("\n······ Experiment Configuration ······ \n", "write");
+		buffer_functions("- # Packages: " + numPaq + ", seed: " + getSeeds() + "\n", "write");
+		buffer_functions("- Proportion: " + proportion + ", seed: " + getSeeds() + "\n", "write");
+		buffer_functions("······································\n" +"\n", "write");
 		for(int l = 0; l < 15; ++l){
-			System.out.println("###########################################");
-			System.out.println("Epsilon happines: " + l);
 			buffer_functions("\n----------------------\n", "write");
 			buffer_functions("Epsilon happiness: " + l + "\n", "write");
 			buffer_functions("----------------------\n", "write");
-			HeuristicFunction f_heuristic = new AzamonHeuristicHappiness(l);
-			String[] operators = {"Move","Swap","Move & Swap"};
-			
 			for(int j = 0; j < 3; ++j){
-				
-				Problem problem = new Problem(azamonState, new AzamonSuccessorSimulatedAnnealing(), new AzamonGoalTest(), f_heuristic);
-			
-				int steps = 5000;
-				int stiter = 100;
-				int k = 1;
-				double lamb = 0.01;
-				SimulatedAnnealingSearch simulatedAnnealingSearch = new SimulatedAnnealingSearch(steps * (j+1), stiter, k, lamb);
-			
-				double meanPrice = 0;
-				double price = 0;
-				double meanHappiness = 0;
-				double happiness = 0;
-				long meanTime = 0;
-				int iterations = 1;
-				
-				for (int i = 0; i < iterations; ++i) {
-					try {
-						long time = System.nanoTime();
-						SearchAgent searchAgent = new SearchAgent(problem, simulatedAnnealingSearch);
-						AzamonState state = (AzamonState) simulatedAnnealingSearch.getGoalState();		
-						meanTime += (System.nanoTime() - time);
-						price = state.getPrice();	
-						meanPrice += price;
-						happiness = state.getHappiness();
-						meanHappiness += happiness;
-						// List actions = searchAgent.getActions();
-						// showActions(actions);
-					
-					} catch (Exception e) {
-						e.printStackTrace();
-					}		
-				}
-				
 				buffer_functions("\nOperator: " + operators[j] + "\n", "write");
-				
 				buffer_functions("\n******* Results *********\n", "write");
-
-				buffer_functions("Mean Price: " + meanPrice/iterations + "\n", "write");
-				buffer_functions("Mean happiness: " + meanHappiness/iterations + "\n", "write");
-				buffer_functions("Mean time: " + Math.round(meanTime/1000000)/iterations + " miliseconds\n", "write");
-				
-				System.out.println("Operator: " + operators[j]);
-				System.out.println("Mean price: " + meanPrice/iterations);
-				System.out.println("Mean happiness: " + meanHappiness/iterations);
-				System.out.println("Mean time: " + Math.round(meanTime/1000000)/iterations);
-				System.out.println("");
+				buffer_functions("Mean Price: " + totalMeanPrice[l][j]/seeds.length + "\n", "write");
+				buffer_functions("Mean happiness: " + totalMeanHappiness[l][j]/seeds.length + "\n", "write");
+				buffer_functions("Mean time: " + totalMeanTime[l][j]/seeds.length + " miliseconds\n", "write");
 			}
 		}
-		
 		buffer_functions(null, "close");
 	}
 
