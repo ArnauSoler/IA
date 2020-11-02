@@ -1,4 +1,4 @@
-CREATE JAR FILE:
+CREATE THE JAR FILE:
 
 	·····················································
 	1. Generate the class files:
