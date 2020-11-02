@@ -82,7 +82,8 @@ public class Create {
 		System.out.println("###	    Select the Heuristic	###");
 		System.out.println("###########################################");
 		System.out.println("### 1.	Min. transport/storage cost	###");
-		System.out.println("### 2.	Max. the customer happiness	###");
+		System.out.println("### 2.	Min. transport/storage cost	###");
+		System.out.println("### 	& Max. customer happiness	###");
 		System.out.println("###########################################");
 		int heuristic = scan.nextInt();
 		return heuristic;
