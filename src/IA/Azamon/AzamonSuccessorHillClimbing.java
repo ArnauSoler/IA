@@ -27,7 +27,7 @@ public class AzamonSuccessorHillClimbing implements SuccessorFunction {
 			if(operator == 3 || operator == 1){
 				for (int j = 0; j < AzamonState.offers.size(); ++j) {
 					AzamonState child_state = new AzamonState(parent_state);
-					// només afegim els estats possibles i que milloren la solucio
+					// we only add the possible states i that improve the solution
 					if(child_state.movePackage(i, j)){
 						StringBuffer S = new StringBuffer();
 						S.append("moving package " + i + " to offer " + j + "\n");
@@ -37,7 +37,6 @@ public class AzamonSuccessorHillClimbing implements SuccessorFunction {
 				}
 			}
 			if(operator == 3 || operator == 2){	
-				// fem i+1 perque no te sentit fer swap amb ell mateix
 				for(int j = i+1; j < AzamonState.packages.size(); ++j){
 					AzamonState child_state = new AzamonState(parent_state);
 					if(child_state.swapPackage(i, j)){
