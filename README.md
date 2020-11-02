@@ -34,6 +34,31 @@ To solve it, we will start from an initial solution that we will try to improve 
 ## Usage
 
 ### Project files
+```
+├─ .settings
+│  └─ org.eclipse.jdt.core.prefs
+├─ lib
+│  ├─ AIMA.jar
+│  └─ Azamon.jar
+├─ outputs
+├─ reports/figures
+├─ src/IA/Azamon
+│  ├─ AzamonGoalTest.java
+│  ├─ AzamonHeuristicCost.java
+│  ├─ AzamonHeuristicHappiness.java 
+│  ├─ AzamonState.java
+│  ├─ AzamonSuccessorHillClimbing.java
+│  ├─ AzamonSuccessorSimulatedAnnealing.java
+│  ├─ Create.java
+│  ├─ Experiments.java
+│  └─ Main.java
+├─ .classpath
+├─ .gitignore
+├─ .project
+├─ Azamon.jar
+├─ LICENSE
+└─ README.md
+```
 
 ### Execution steps
 
