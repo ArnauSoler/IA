@@ -41,21 +41,24 @@ To solve it, we will start from an initial solution that we will try to improve 
 │  ├─ AIMA.jar
 │  └─ Azamon.jar
 ├─ outputs
-├─ reports/figures
-├─ src/IA/Azamon
-│  ├─ AzamonGoalTest.java
-│  ├─ AzamonHeuristicCost.java
-│  ├─ AzamonHeuristicHappiness.java 
-│  ├─ AzamonState.java
-│  ├─ AzamonSuccessorHillClimbing.java
-│  ├─ AzamonSuccessorSimulatedAnnealing.java
-│  ├─ Create.java
-│  ├─ Experiments.java
-│  └─ Main.java
+├─ reports
+|  ├─ figures
+|  └─ Report.pdf
+├─ src/
+|  ├─ IA/Azamon/
+│  |  ├─ AzamonGoalTest.java
+│  |  ├─ AzamonHeuristicCost.java
+│  |  ├─ AzamonHeuristicHappiness.java 
+│  |  ├─ AzamonState.java
+│  |  ├─ AzamonSuccessorHillClimbing.java
+│  |  ├─ AzamonSuccessorSimulatedAnnealing.java
+│  |  ├─ Create.java
+│  |  ├─ Experiments.java
+│  |  └─ Main.java
+|  └─ Azamon.jar
 ├─ .classpath
 ├─ .gitignore
 ├─ .project
-├─ Azamon.jar
 ├─ LICENSE
 └─ README.md
 ```
